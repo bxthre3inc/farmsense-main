@@ -1,6 +1,6 @@
 import React from 'react';
 import { Users, RefreshCw, UserPlus } from 'lucide-react';
-import { Button } from '../../../components/ui/Button';
+import { Button } from '../../../../components/ui/Button';
 
 interface UserListHeaderProps {
     loading: boolean;

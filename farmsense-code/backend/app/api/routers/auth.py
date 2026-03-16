@@ -12,7 +12,12 @@ from app.models.user import User
 router = APIRouter()
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-SECRET_KEY = os.getenv("JWT_SECRET", "farmsense-tactical-secret-2026-v1-mvp")
+
+# SECURITY: JWT_SECRET must be set via environment variable - no fallbacks allowed
+SECRET_KEY = os.getenv("JWT_SECRET")
+if not SECRET_KEY:
+    raise RuntimeError("JWT_SECRET environment variable must be set - no default secrets allowed")
+
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 1 week
 

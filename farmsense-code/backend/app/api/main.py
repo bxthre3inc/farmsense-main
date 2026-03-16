@@ -61,10 +61,8 @@ app.include_router(tiles.router, prefix="/api/v1", tags=["tiles"])
 # === Global WebSocket Real-time Endpoint ===
 # IMPORTANT: JWT_SECRET must match the NEXTAUTH_SECRET to validate tokens from the frontend
 JWT_SECRET = os.getenv("JWT_SECRET")
-if not JWT_SECRET and os.getenv("ENVIRONMENT") == "production":
-    raise RuntimeError("JWT_SECRET must be set in production")
-elif not JWT_SECRET:
-    JWT_SECRET = "development-secret-only-change-in-env"
+if not JWT_SECRET:
+    raise RuntimeError("JWT_SECRET environment variable must be set - no fallback allowed")
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket, token: str = Query(None)):

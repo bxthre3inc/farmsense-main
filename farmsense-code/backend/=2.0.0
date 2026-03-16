@@ -1,0 +1,5 @@
+Requirement already satisfied: shapely in ./venv/lib/python3.12/site-packages (2.1.2)
+Requirement already satisfied: numpy>=1.21 in ./venv/lib/python3.12/site-packages (from shapely) (2.4.3)
+
+[notice] A new release of pip is available: 23.2.1 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip

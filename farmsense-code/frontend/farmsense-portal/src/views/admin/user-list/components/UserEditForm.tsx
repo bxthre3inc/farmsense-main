@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Building2, User as UserIcon, CheckCircle, AlertCircle, FileText } from 'lucide-react';
-import { Input } from '../../../components/ui/Input';
-import { Button } from '../../../components/ui/Button';
+import { Input } from '../../../../components/ui/Input';
+import { Button } from '../../../../components/ui/Button';
 
 interface UserEditFormProps {
     formData: {

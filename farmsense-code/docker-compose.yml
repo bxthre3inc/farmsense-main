@@ -1,11 +1,14 @@
 version: '3.8'
 
+# Set POSTGRES_PASSWORD in your .env file or environment
+# Default fallback is 'demo-password' for local development only
+
 services:
   db:
     image: postgres:15
     environment:
       POSTGRES_DB: farmsense
-      POSTGRES_PASSWORD: demo-password
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-demo-password}
     ports:
       - "5432:5432"
     volumes:
@@ -16,7 +19,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     environment:
-      DATABASE_URL: postgresql://postgres:demo-password@db:5432/farmsense
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-demo-password}@db:5432/farmsense
     ports:
       - "8000:8000"
     depends_on:

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, Filter } from 'lucide-react';
-import { Input } from '../../../components/ui/Input';
-import { Card } from '../../../components/ui/Card';
+import { Input } from '../../../../components/ui/Input';
+import { Card } from '../../../../components/ui/Card';
 
 interface UserListFiltersProps {
     searchQuery: string;

@@ -1,0 +1,19 @@
+# Pinned versions for reproducible builds
+# Updated: 2026-03-14
+
+fastapi==0.109.1
+uvicorn[standard]==0.24.0
+sqlalchemy==2.0.23
+geoalchemy2==0.14.2
+shapely==2.0.2
+psycopg2-binary==2.9.9
+pydantic==2.5.2
+pydantic[email]==2.5.2
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+httpx==0.25.2
+numpy==1.24.3
+requests==2.31.0
+python-multipart==0.0.7
+websockets==12.0
+alembic==1.12.1

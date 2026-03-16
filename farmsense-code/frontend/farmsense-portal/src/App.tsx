@@ -8,16 +8,36 @@ import LoginPage from './shell/LoginPage';
 // Views — Grant
 import GrantReviewerView from './views/grants/GrantReviewerView';
 
-// Lazy stubs — replaced with real components as migration progresses
-import AdminView from './views/stubs/AdminView';
-import FarmerView from './views/stubs/FarmerView';
-import ResearchView from './views/stubs/ResearchView';
-import GrantsView from './views/stubs/GrantsView';
-import ComplianceView from './views/stubs/ComplianceView';
-import RegulatoryView from './views/stubs/RegulatoryView';
-import InvestorView from './views/stubs/InvestorView';
-import DocsView from './views/stubs/DocsView';
-import MarketingView from './views/stubs/MarketingView';
+// Admin Views
+import AdminView from './views/admin/AdminView';
+import UserList from './views/admin/UserList';
+import AdminMetrics from './views/admin/AdminMetrics';
+import InvestorManagement from './views/admin/InvestorManagement';
+
+// Farmer Views
+import FarmerView from './views/farmer/ARFieldVision';
+
+// Research Views
+import ResearchView from './views/research/FederatedExperimentConsole';
+
+// Grants Management Views
+import GrantDiscovery from './views/grants/GrantDiscovery';
+import ApplicationManager from './views/grants/ApplicationManager';
+import AwardTracker from './views/grants/AwardTracker';
+
+// Compliance Views
+import ComplianceView from './views/compliance/ComplianceDashboard';
+
+// Regulatory Views
+import RegulatoryView from './views/regulatory/ComplianceList';
+import BasinAnalytics from './views/research/BasinAnalytics';
+
+// Investor Views
+import InvestorView from './views/investor/InvestorLanding';
+
+// Docs & Marketing
+import DocsView from './views/docs/DocsPlaceholder';
+import MarketingView from './views/investor/InvestorLanding';
 
 function RootRedirect() {
   const { isAuthenticated, activeRole } = useAuth();
@@ -57,7 +77,7 @@ function App() {
           <Route path="/grants/*" element={
             <PrivateRoute>
               <RoleRoute allowedRoles={['ADMIN', 'GRANT_MANAGER']}>
-                <RoleShell><GrantsView /></RoleShell>
+                <RoleShell><ApplicationManager /></RoleShell>
               </RoleRoute>
             </PrivateRoute>
           } />

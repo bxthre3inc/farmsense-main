@@ -1,3 +1,17 @@
+---
+Status: Active
+Last Audited: 2026-03-14
+Drift Aversion: REQUIRED
+---
+
+> [!IMPORTANT]
+> **MODULAR DAP (Drift Aversion Protocol)**
+> **Module: D-DAP (Documentation)**
+> 1. **Single Source of Truth**: This document is the authoritative reference for its subject matter.
+> 2. **Synchronized Updates**: Any change to corresponding code or system behavior MUST be reflected here immediately.
+> 3. **AI Agent Compliance**: Agents MUST verify the current implementation against this document before proposing changes.
+> 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
+
 # FarmSense Project: Master Task List
 
 This file tracks the immediate and long-term objectives for the FarmSense project.

@@ -1,19 +1,27 @@
-"""
-edge_kriging.py — PMT Edge-EBK Spatial Interpolation
+# MODULAR DAP (Drift Aversion Protocol)
+# Module: E-DAP (Engineering)
+# 1. **Architectural Integrity**: Implementation must adhere to the Master Software Architecture.
+# 2. **Synchronized Updates**: Changes to system behavior MUST be reflected in D-DAP documentation.
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
 
-Simplified Empirical Bayesian Kriging (EBK) implementation for the 
-Cortex-M4 FPU. Performs a single-pass interpolation using a 
-weighted variogram model across a 50m resolution grid.
-"""
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
 
 import math
 import numpy as np
 from typing import List, Dict, Tuple
+import sys
+import os
 
-class EdgeKrigingEngine:
+# Add common to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+from common.spatial.kriging import KrigingBase
+
+class EdgeKrigingEngine(KrigingBase):
     def __init__(self, grid_size: int = 16, resolution_m: float = 50.0):
+        super().__init__(resolution_m=resolution_m)
         self.grid_size = grid_size
-        self.resolution = resolution_m
         
     def compute_50m_grid(
         self, 
@@ -30,10 +38,8 @@ class EdgeKrigingEngine:
 
         grid = np.zeros((self.grid_size, self.grid_size))
         
-        # Approximate meters to degrees conversion for local field
-        # (Simplified for Cortex-M4 math)
-        lat_step = (self.resolution / 111111.0)
-        lon_step = (self.resolution / (111111.0 * math.cos(math.radians(center_lat))))
+        # Use shared spatial logic
+        lat_step, lon_step = get_lat_lon_steps(self.resolution, center_lat)
         
         # Grid boundaries
         min_lat = center_lat - (self.grid_size // 2) * lat_step

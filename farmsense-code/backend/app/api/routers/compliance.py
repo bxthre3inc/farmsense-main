@@ -1,3 +1,13 @@
+# MODULAR DAP (Drift Aversion Protocol)
+# Module: E-DAP (Engineering)
+# 1. **Architectural Integrity**: Implementation must adhere to the Master Software Architecture.
+# 2. **Synchronized Updates**: Changes to system behavior MUST be reflected in D-DAP documentation.
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
+
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
+
 from fastapi import APIRouter, Depends, Query, BackgroundTasks
 from sqlalchemy.orm import Session
 from datetime import datetime
@@ -8,7 +18,7 @@ from app.models.user import User, UserRole
 from app.models import ComplianceReport
 
 from app.schemas.metrics import ComplianceReportResponse
-from app.services.audit_service import RegulatoryAuditService
+from app.services.compliance_service import ComplianceService
 
 router = APIRouter()
 
@@ -73,7 +83,7 @@ def get_field_audit_report(
     Consolidates UFI scores, high-res kriging metadata, and AllianceChain proofs.
     Requires REGULATOR or INTERNAL role.
     """
-    report = RegulatoryAuditService.generate_field_audit_report(db, field_id, user)
+    report = ComplianceService.generate_audit_report(db, field_id, user)
     return report
 
 
@@ -253,4 +263,3 @@ def list_gap_control_points():
         }
         for cp in ControlPointID
     ]
-

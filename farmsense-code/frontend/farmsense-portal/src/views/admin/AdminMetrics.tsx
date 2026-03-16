@@ -83,6 +83,28 @@ export const AdminMetrics: React.FC = () => {
                         View queue
                     </div>
                 </div>
+
+                <div className="bg-[#0A0713] p-5 rounded-2xl border border-blue-900/30">
+                    <div className="flex items-center gap-3 text-blue-400 mb-4">
+                        <Globe className="w-5 h-5" />
+                        <span className="text-[10px] font-black uppercase tracking-widest">Kriging Accuracy</span>
+                    </div>
+                    <p className="text-3xl font-black text-white">96.6%</p>
+                    <div className="flex items-center gap-1 mt-2 text-emerald-500 text-[10px] font-bold">
+                        <TrendingUp className="w-3 h-3" /> MAPE: 3.4%
+                    </div>
+                </div>
+
+                <div className="bg-[#0A0713] p-5 rounded-2xl border border-purple-900/30">
+                    <div className="flex items-center gap-3 text-purple-400 mb-4">
+                        <Zap className="w-5 h-5" />
+                        <span className="text-[10px] font-black uppercase tracking-widest">Soil Stress Index</span>
+                    </div>
+                    <p className="text-3xl font-black text-white">LOW</p>
+                    <div className="flex items-center gap-1 mt-2 text-blue-500 text-[10px] font-bold">
+                        <Activity className="w-3 h-3" /> Spatial stability: High
+                    </div>
+                </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

@@ -1,3 +1,13 @@
+# MODULAR DAP (Drift Aversion Protocol)
+# Module: E-DAP (Engineering)
+# 1. **Architectural Integrity**: Implementation must adhere to the Master Software Architecture.
+# 2. **Synchronized Updates**: Changes to system behavior MUST be reflected in D-DAP documentation.
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
+
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
+
 import time
 import logging
 from datetime import datetime, timedelta
@@ -77,32 +87,10 @@ def generate_compliance_report_task(
     report_type: str,
     db: Session
 ):
-    """Background task: Generate compliance report"""
-    # Simulate heavy computation
-    time.sleep(2)
+    """Background task: Generate compliance report via unified service"""
+    from app.services.compliance_service import ComplianceService
     
-    report = ComplianceReport(
-        field_id=field_id,
-        report_period_start=period_start,
-        report_period_end=period_end,
-        report_type=report_type,
-        total_irrigation_m3=1250.5,
-        water_use_efficiency=85.2,
-        allocation_compliance_pct=98.5,
-        validation_score=0.94,
-        avg_soil_health_index=7.2,
-        nutrient_runoff_risk="low",
-        biodiversity_score=8.5,
-        data_completeness_pct=99.9,
-        sensor_uptime_pct=99.5,
-        validation_status="approved",
-        slv_2026_compliant="yes",
-        violations=[],
-        corrective_actions=[],
-        report_hash="a1b2c3d4e5f6g7h8i9j0",
-        signed_by="System Autobotizer",
-        signature="signature_hash_xyz"
+    # Use E-DAP compliant unified service
+    ComplianceService.generate_certified_court_report(
+        db, field_id, period_start, period_end
     )
-    
-    db.add(report)
-    db.commit()

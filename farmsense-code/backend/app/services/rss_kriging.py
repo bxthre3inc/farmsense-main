@@ -1,14 +1,23 @@
-"""
-rss_kriging.py — Regional Superstation (RSS) High-Fidelity Kriging Engine
+# MODULAR DAP (Drift Aversion Protocol)
+# Module: E-DAP (Engineering)
+# 1. **Architectural Integrity**: Implementation must adhere to the Master Software Architecture.
+# 2. **Synchronized Updates**: Changes to system behavior MUST be reflected in D-DAP documentation.
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
 
-Implements 1m spatial grid processing using Gaussian Process Regression (Kriging).
-Integrated with SECURE_ENCLAVE encryption pathways and drone-layer fusion.
-"""
+# 3. **AI Agent Compliance**: Agents MUST verify the current implementation against documentation before proposing changes.
+# 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
 
 import numpy as np
 import logging
 from typing import List, Dict, Any, Optional
 from datetime import datetime
+import sys
+import os
+
+# Add common to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
+from common.spatial.kriging import KrigingBase
 
 try:
     import sklearn
@@ -104,8 +113,9 @@ class FHEVector:
         
         return FHEVector(mean_vec, context=self.context, already_encrypted=True)
 
-class RSSKrigingEngine:
-    def __init__(self):
+class RSSKrigingEngine(KrigingBase):
+    def __init__(self, resolution_m: float = 1.0):
+        super().__init__(resolution_m=resolution_m)
         # Gaussian Process setup
         if SKLEARN_AVAILABLE:
             # Kernel: Constant * RBF + White (Noise)

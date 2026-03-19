@@ -35,7 +35,7 @@ The FarmSense documentation suite has been flattened and consolidated into autho
 
 **MASTER**: [`docs/MASTER_MANUAL.md#system-specifications`](MASTER_MANUAL.md)
 
-- Device Master Specifications (LRZ1, LRZ2, VFA, PMT, PFA, DHU, RSS)
+- Device Master Specifications (LRZN, LRZB, VFA, PMT, PFA, DHU, RSS)
 - Hardware Hierarchy & 2:4:12 Ratios
 - Network Protocols (LoRa Mesh vs. LTU)
 - BOM (Bill of Materials) & Pinout Maps
@@ -101,7 +101,7 @@ farmsense-main/
 | :--- | :--- | :--- |
 | **Pivots (Subdistrict 1)** | 1,270 | MASTER_PROJECT_ROADMAP |
 | **Water Court Trial** | June 29, 2026 | MASTER_PROJECT_ROADMAP |
-| **LRZ2 OEM Cost** | $54.30 | MASTER_MANUAL |
+| **LRZB OEM Cost** | $54.30 | MASTER_MANUAL |
 | **Kriging Error Bar** | < 5% | MASTER_MANUAL |
 | **ESTCP Deadline** | March 26, 2026 | MASTER_PROJECT_ROADMAP |
 

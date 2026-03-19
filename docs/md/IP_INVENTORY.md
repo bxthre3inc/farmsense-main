@@ -53,10 +53,10 @@ This document registers the core Intellectual Property (IP) modules of the FarmS
 
 ## 3. Communication & Infrastructure
 
-- **LRZN (Long Range Node)**: High-density RF mesh nodes.
+- **LRZN (Lateral Root Zone Node)**: High-density RF mesh nodes.
   - *Spec Link*: [Master Manual §1.5](MASTER_MANUAL.md#15-telemetry-architecture-resolution)
 
-- **LRZB (Long Range Beacon)**: Primary beacon nodes for field network synchronization.
+- **LRZB (Lateral Root Zone Beacon)**: Primary beacon nodes for field network synchronization.
   - *Spec Link*: [Master Manual §1.5](MASTER_MANUAL.md#15-telemetry-architecture-resolution)
 
 - **AllianceChain**: Private PBFT consensus for digital agricultural auditing.

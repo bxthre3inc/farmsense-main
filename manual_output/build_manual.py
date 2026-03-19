@@ -21,7 +21,7 @@ PARTS = [
     ("II", "Market Intelligence", "TAM/SAM/SOM, Competitive Moat, Federal Grants"),
     ("III", "Human Capital", "Leadership, Org Chart, Scientific Advisory Board"),
     ("IV", "Technical Core", "Tri-Layer Compute, SQL Schema, API Specifications"),
-    ("V", "Hardware Ecosystem", "RSS/DHU/PMT/PFA, VFA/LRZ1/LRZ2, SFD Configs"),
+    ("V", "Hardware Ecosystem", "RSS/DHU/PMT/PFA, VFA/LRZN/LRZB, SFD Configs"),
     ("VI", "Interface Layer", "3D Farmer Dashboard, Regulatory Portal, ROI Analytics"),
     ("VII", "Hydrologic Oracle", "SPAC Thermodynamics, Cokriging Math, 40 Basins"),
     ("VIII", "Pilot Mission", "CSU SLV Specification, Timeline, Success Criteria"),

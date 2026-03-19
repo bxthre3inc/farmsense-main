@@ -192,7 +192,7 @@ Consolidates: <a href="http://ARCHITECTURE.md">ARCHITECTURE.md</a>, <a href="htt
 <p>FarmSense functions as a decentralized monolithic grid, balancing low-latency edge reflex with high-capacity cloud geostatistics.</p>
 <h3>2.1 Hierarchical Processing Stack</h3>
 <ol>
-<li><strong>Level 1 (Field):</strong> <strong>LRZ1/LRZ2/VFA/PFA</strong> (LoRa bursts) -&gt; <strong>PMT Hub</strong> (50m Grid, Compliance Baseline). 900MHz <strong>Chirp Spread CSS</strong> security.</li>
+<li><strong>Level 1 (Field):</strong> <strong>LRZN/LRZB/VFA/PFA</strong> (LoRa bursts) -&gt; <strong>PMT Hub</strong> (50m Grid, Compliance Baseline). 900MHz <strong>Chirp Spread CSS</strong> security.</li>
 <li><strong>Level 2 (District):</strong> <strong>DHUs</strong> (NVIDIA Jetson) -&gt; 20m/10m Grid (Optimization Layer). Localized reflex autonomy.</li>
 <li><strong>Level 3 (Regional):</strong> <strong>RSS</strong> (64-Core Threadripper) -&gt; 1m Master Grid + 1cm Point Zoom (Enterprise Tier). Regional DIL vaulting.</li>
 <li><strong>Level 4 (Global):</strong> <strong>Core Compute Cloud</strong> -&gt; Multi-field analytics, Federated Learning, global hydro-economics.</li>
@@ -347,7 +347,7 @@ SELECT create_hypertable('sensor_readings', 'time');
 <ul>
 <li><strong>UFI Hex-Fusion</strong>: Real-time synthesis of UN Regulatory Stress, Satellite Moisture, Vapor Pressure Deficit (VPD), AllianceChain Liquidity, and FarmSense Ground-Truth (60% weight).</li>
 <li><strong>Bayesian Priors</strong>: Establishes moisture probability using historical <strong>Soil Functional Domain (SFD)</strong> profiles and multispectral NDVI baselines.</li>
-<li><strong>Regression Kriging</strong>: Ordinary Kriging corrects Sentinel-2 trend bias using ground-truth LRZ1/LRZ2/VFA <strong>Dielectric Telemetry</strong>.</li>
+<li><strong>Regression Kriging</strong>: Ordinary Kriging corrects Sentinel-2 trend bias using ground-truth LRZN/LRZB/VFA <strong>Dielectric Telemetry</strong>.</li>
 <li><strong>MAD Framework</strong>: <strong>Management Allowable Depletion (MAD)</strong> — utilizes the soil profile as a “Water Battery” to optimize pumping schedules and prevent permanent wilting points.</li>
 </ul>
 <h3>4.2 Adaptive Recalculation Engine (“Fisherman’s Attention”)</h3>
@@ -385,7 +385,7 @@ SELECT create_hypertable('sensor_readings', 'time');
 </table>
 <h4>Autonomous Edge-EBK Logic</h4>
 <ul>
-<li><strong>FPU Calculation</strong>: The hardware FPU processes <strong>AES-256</strong> chirps from LRZ1/LRZ2/VFA nodes into a localized 16x16 probability matrix.</li>
+<li><strong>FPU Calculation</strong>: The hardware FPU processes <strong>AES-256</strong> chirps from LRZN/LRZB/VFA nodes into a localized 16x16 probability matrix.</li>
 <li><strong>Trajectory Collapse</strong>: In “Collapse” mode, the FPU zeroes calculations on dormant sections, focusing 100% of compute on the active pivot span trajectory.</li>
 <li><strong>Payload Bundling</strong>: The PMT bundles its own High-Fidelity kinematic data, the processed 50m Edge-EBK arrays, and the intercepted VFA/LRZ intelligence into a unified, encrypted <strong>~187-byte Field State Payload</strong>.</li>
 <li><strong>LoRa Mesh Backhaul</strong>: Blasts the unified payload to the District Hub (DHU) via 900MHz LoRa Mesh.</li>

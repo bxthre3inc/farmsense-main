@@ -109,7 +109,7 @@ To maximize hardware lifecycle (10 years), FarmSense operates on a two-phase sea
 ### 4.2 Beta Launch (CSU SLV Pilot - March 10, 2026)
 
 - **Deployment**: 2 Fields at CSU Research Center (Center, CO).
-- **Hardware**: 2 PMTs, 2 PFAs, 2 VFAs, 16-20 LRZ1/LRZ2 Nodes.
+- **Hardware**: 2 PMTs, 2 PFAs, 2 VFAs, 16-20 LRZN/LRZB Nodes.
 - **Goal**: `<5%` Kriging Error validation for Water Court.
 
 ### 4.3 V1 Master Standard (Spring 2027)
@@ -130,7 +130,7 @@ To maximize hardware lifecycle (10 years), FarmSense operates on a two-phase sea
 
 ### 5.3 Global Impact Grants (Q3–Q4 2026)
 
-- **Gates Foundation**: COP30 COP30 Smallholder Advisory Mesh ($50.80 LRZ1 target).
+- **Gates Foundation**: COP30 COP30 Smallholder Advisory Mesh ($50.80 LRZN target).
 - **World Food Prize**: $250,000 nomination for food-security impact.
 - **Earthshot Prize**: £1M for climate/nature protection.
 
@@ -166,7 +166,7 @@ FarmSense acts as a distributed "hydrological radar." Funding from civilian AgTe
 
 ### 7.2 Global Philanthropy (Advisory Mesh)
 
-For smallholders ($50.80 LRZ1), the "Advisory Mesh" provides deterministic SMS commands without requiring expensive pump actuation hardware, subsidized by domestic Enterprise tiers.
+For smallholders ($50.80 LRZN), the "Advisory Mesh" provides deterministic SMS commands without requiring expensive pump actuation hardware, subsidized by domestic Enterprise tiers.
 
 ---
 

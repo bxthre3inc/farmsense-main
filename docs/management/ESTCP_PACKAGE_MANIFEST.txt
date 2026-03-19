@@ -1,0 +1,49 @@
+ESTCP FY 2027 SUBMISSION PACKAGE — FarmSense / Bxthre3 Inc
+=============================================================
+Generated: 2026-03-17T22:05:00Z
+Submission Deadline: 2026-03-24
+Package ID: ESTCP-ER26-FS-01-FINAL
+
+PRIMARY DOCUMENT
+----------------
+ESTCP_SUBMISSION_FINAL.pdf (or .md)
+  - Executive Summary
+  - Technical Approach  
+  - Validation Architecture
+  - Implementation Roadmap
+  - Budget Summary ($830K Phase I)
+  - 4 Signatures (Pending: Maya, Theo, Drew, Casey)
+
+SUPPORTING APPENDICES (PDF/Markdown)
+-------------------------------------
+Appendix A: ESTCP_FIELD_VALIDATION_PROTOCOL_NITRATE.md
+  Author: Theo (Field Systems Engineer)
+  Status: Complete
+
+Appendix B: ESTCP_CYBERSECURITY_RISK_ASSESSMENT.md
+  Author: Drew (Senior Software Engineer)
+  Status: Complete
+
+Appendix C: ESTCP_PHASE2_BACKUP_SLIDE.md
+  Author: Casey (Grant Coordinator)
+  Status: Complete
+
+Appendix D: ESTCP_SPECTROSCOPY_DECISION.md
+  Author: Maya (VP Engineering)
+  Status: Complete
+
+PORTAL UPLOAD CHECKLIST
+-----------------------
+□ Primary document (PDF)
+□ Appendix A (Field Validation)
+□ Appendix B (Cybersecurity Risk)
+□ Budget justification (embedded in primary)
+□ Letters of Support (if required separately)
+□ Environmental review (if required separately)
+
+SUBMISSION CONTACT
+------------------
+Primary: Casey (Grant Coordinator)
+Secondary: brodiblanco@zo.computer
+
+ESTIMATED TIME TO SUBMIT: 2 hours (post-signatures)

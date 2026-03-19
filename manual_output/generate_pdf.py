@@ -84,7 +84,7 @@ async def generate_pdf():
             <tr><td><strong>II</strong></td><td>Market Intelligence</td><td>TAM/SAM/SOM Analysis; Competitive Moat; Federal Grants</td></tr>
             <tr><td><strong>III</strong></td><td>Human Capital</td><td>Leadership; Org Chart; Scientific Advisory Board</td></tr>
             <tr><td><strong>IV</strong></td><td>Technical Core</td><td>Tri-Layer Compute; SQL Schema; API Specifications</td></tr>
-            <tr><td><strong>V</strong></td><td>Hardware Ecosystem</td><td>RSS/DHU/PMT/PFA; VFA/LRZ1/LRZ2; SFD Configs</td></tr>
+            <tr><td><strong>V</strong></td><td>Hardware Ecosystem</td><td>RSS/DHU/PMT/PFA; VFA/LRZN/LRZB; SFD Configs</td></tr>
             <tr><td><strong>VI</strong></td><td>Interface Layer</td><td>3D Farmer Dashboard; Regulatory Portal; ROI Analytics</td></tr>
             <tr><td><strong>VII</strong></td><td>Hydrologic Oracle</td><td>SPAC Thermodynamics; Cokriging Math; 40 Global Basins</td></tr>
             <tr><td><strong>VIII</strong></td><td>Pilot Mission</td><td>CSU SLV Specification; Timeline; Success Criteria</td></tr>

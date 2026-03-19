@@ -547,7 +547,7 @@ This maximizes responsiveness during critical irrigation events.
 **Elevation:** 10-15 feet on pivot span (Tower 2-3)
 **Key Functions:**
 
-1. Aggregate data from VFA, LRZ1, LRZ2, PFA via 900MHz CSS LoRa
+1. Aggregate data from VFA, LRZN, LRZB, PFA via 900MHz CSS LoRa
 2. Execute Edge-EBK 50m grid computation
 3. Track pivot position with sub-cm RTK GNSS
 4. Detect stall/collision via 9-axis IMU
@@ -606,7 +606,7 @@ if (accel_magnitude > 3g AND gyro_delta > 100°/s):
 
 | Interface | Protocol | Purpose |
 |-----------|----------|---------|
-| Downlink (to sensors) | 900MHz CSS LoRa | VFA, LRZ1, LRZ2, PFA ingress |
+| Downlink (to sensors) | 900MHz CSS LoRa | VFA, LRZN, LRZB, PFA ingress |
 | Uplink (to DHU) | 2.4GHz or LTE-M | Backhaul |
 | Maintenance | BLE 5.0 | Field technician access |
 | RTK correction | RTCM 3.x | GNSS precision |

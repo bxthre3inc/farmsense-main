@@ -274,14 +274,14 @@
 </tr>
 <tr class="odd">
 <td>1</td>
-<td><strong>LRZ1 (Lateral Root-Zone Basic)</strong></td>
+<td><strong>LRZN (Lateral Root-Zone Basic)</strong></td>
 <td>Spatial scout</td>
 <td>Ground level (buried)</td>
 <td><strong>PMT</strong></td>
 </tr>
 <tr class="even">
 <td>1</td>
-<td><strong>LRZ2 (Lateral Root-Zone Reference)</strong></td>
+<td><strong>LRZB (Lateral Root-Zone Reference)</strong></td>
 <td>Spatial scout + VWC</td>
 <td>Ground level (buried)</td>
 <td><strong>PMT</strong></td>
@@ -295,20 +295,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>CRITICAL ARCHITECTURE POINT:</strong> The PMT (elevated on the pivot span at 10-15 feet) serves as the <strong>Primary Field Aggregator</strong>. All ground-level devices (VFA, LRZ1, LRZ2, PFA) report upward to the PMT via 900MHz CSS LoRa. The PMT then: 1. Aggregates all sensor data 2. Performs Edge-EBK computation (50m grid) 3. Packages into encrypted payload (~187 bytes) 4. Transmits to DHU via 2.4GHz/LTE-M</p>
+<p><strong>CRITICAL ARCHITECTURE POINT:</strong> The PMT (elevated on the pivot span at 10-15 feet) serves as the <strong>Primary Field Aggregator</strong>. All ground-level devices (VFA, LRZN, LRZB, PFA) report upward to the PMT via 900MHz CSS LoRa. The PMT then: 1. Aggregates all sensor data 2. Performs Edge-EBK computation (50m grid) 3. Packages into encrypted payload (~187 bytes) 4. Transmits to DHU via 2.4GHz/LTE-M</p>
 <p>This elevated topology circumvents the dense water canopy that attenuates ground-level signals.</p>
 <h2 id="telemetry-architecture-resolution">1.5 Telemetry Architecture Resolution</h2>
 <h3 id="the-vfa-to-dhu-challenge-resolved">1.5.1 The VFA-to-DHU Challenge (Resolved)</h3>
 <p><strong>Initial Design Flaw:</strong> - VFA specified 900MHz CSS LoRa uplink - DHU specified 2.4GHz Ubiquiti LTU only - <strong>Resolution:</strong> DHU BOM revised to include 900MHz CSS LoRa gateway alongside 2.4GHz array</p>
 <h3 id="the-pmt-field-hub-solution-confirmed">1.5.2 The PMT Field Hub Solution (CONFIRMED)</h3>
-<p><strong>The PMT as Primary Field Aggregator:</strong> - PMT elevated 10-15 feet on pivot span - All field sensors (VFA, LRZ1, LRZ2, PFA) report to PMT via 900MHz CSS LoRa - PMT aggregates, computes Edge-EBK, and routes to DHU - This topology entirely circumvents dense water canopy attenuation</p>
-<h3 id="lrz1-vs-lrz2-distinction-critical">1.5.3 LRZ1 vs LRZ2 Distinction (CRITICAL)</h3>
+<p><strong>The PMT as Primary Field Aggregator:</strong> - PMT elevated 10-15 feet on pivot span - All field sensors (VFA, LRZN, LRZB, PFA) report to PMT via 900MHz CSS LoRa - PMT aggregates, computes Edge-EBK, and routes to DHU - This topology entirely circumvents dense water canopy attenuation</p>
+<h3 id="lrzn-vs-lrzb-distinction-critical">1.5.3 LRZN vs LRZB Distinction (CRITICAL)</h3>
 <table>
 <thead>
 <tr class="header">
 <th>Feature</th>
-<th>LRZ1 (Basic)</th>
-<th>LRZ2 (Reference)</th>
+<th>LRZN (Basic)</th>
+<th>LRZB (Reference)</th>
 </tr>
 </thead>
 <tbody>
@@ -344,7 +344,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Deployment Ratio:</strong> - LRZ2 (Reference): 4 per field - LRZ1 (Basic): 12 per field - Total: 16 LRZ nodes per standard field</p>
+<p><strong>Deployment Ratio:</strong> - LRZB (Reference): 4 per field - LRZN (Basic): 12 per field - Total: 16 LRZ nodes per standard field</p>
 <h2 id="risk-factor-analysis">1.6 Risk Factor Analysis</h2>
 <h3 id="geopolitical-water-scarcity">1.6.1 Geopolitical Water Scarcity</h3>
 <p>Interstate litigation could trigger federal aquifer takeovers. The Sovereign Ledger enables state engineers to prove compact compliance, reducing federal intervention standing.</p>

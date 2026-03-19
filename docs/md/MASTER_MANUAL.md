@@ -121,11 +121,11 @@ MAD defines the percentage of available soil water depletable before crop damage
 **The PMT Field Hub Solution:**
 
 - PMT elevated 10-15 feet on pivot span as **Primary Field Aggregator**.
-- VFA, LRZ1/LRZ2, PFA report upward to PMT via 900MHz CSS LoRa.
+- VFA, LRZN/LRZB, PFA report upward to PMT via 900MHz CSS LoRa.
 - PMT packages data and routes to DHU via 2.4GHz/LTE-M.
 - **DHU Role:** DHUs maintain a secondary 900MHz LoRa gateway for static sensing nodes and mesh-node redundancy across the 100-pivot district radius.
 
-**LRZ1/LRZ2 Sub-Node Architecture:**
+**LRZN/LRZB Sub-Node Architecture:**
 
 - Chirp Spread Spectrum (CSS) LoRa: 915MHz, -148dBm sensitivity
 - 100% canopy penetration vs. 2.4GHz (60% loss in dense corn)
@@ -243,7 +243,7 @@ MAD defines the percentage of available soil water depletable before crop damage
 
 ### 4.1 Tri-Layer Compute Topology
 
-**Level 0 (Field Sensors):** VFA, LRZ1/LRZ2, PFA — Bare-metal C, AES-256 encryption
+**Level 0 (Field Sensors):** VFA, LRZN/LRZB, PFA — Bare-metal C, AES-256 encryption
 **Level 1.5 (PMT Hub):** ESP32-S3 — Edge-EBK 50m grid, Reflex Logic
 **Level 2 (DHU):** Jetson Orin Nano — 20m/10m Kriging, PBFT consensus
 **Level 3 (RSS/Cloud):** Threadripper PRO — 1m Master Grid, FHE vaulting
@@ -335,7 +335,7 @@ Default → DORMANT
 ### 4.6 Sensor Anomaly Detection & Self-Healing
 
 **Z-Score Thresholding:** Values >3σ flagged for review
-**Cross-Sensor Validation:** VFA vs. LRZ2 correlation check
+**Cross-Sensor Validation:** VFA vs. LRZB correlation check
 **Auto-Recovery:** Sensor failover to interpolated values with confidence flagging
 
 ### 4.7 Spatial Privacy: Zero-Knowledge Framework
@@ -495,9 +495,9 @@ Default → DORMANT
 
 **VFA BOM:** $358.90 per unit
 
-### 5.6 Lateral Root-Zone Surveyor (LRZ) V1.2
+### 5.6 Lateral Root Zone Surveyor (LRZ) V1.2
 
-**Density:** 16 per field (4× LRZ2 Reference + 12× LRZ1 Truth)
+**Density:** 16 per field (4× LRZB Reference + 12× LRZN Truth)
 **PCBA GPIO:**
 
 - P0.02/P0.03: 12-bit analog dielectric
@@ -506,27 +506,27 @@ Default → DORMANT
 **Sensing:** ~100MHz dielectric projection through HDPE walls
 **Power:** 21700 LiSOCl2 cell, 4+ year life
 
-**LRZ2 BOM:** $54.30 per unit
-**LRZ1 BOM:** $29.00 per unit
+**LRZB BOM:** $54.30 per unit
+**LRZN BOM:** $29.00 per unit
 
 ### 5.7 Single Field Deployment (SFD) Configurations
 
 **SFD-P: Standard Pivot (126-acre circular)**
 
 - 1× PMT, 1× PFA
-- 2× VFA, 4× LRZ2, 12× LRZ1 (20 nodes total)
+- 2× VFA, 4× LRZB, 12× LRZN (20 nodes total)
 - 50m Compliance / 1m Enterprise resolution
 
 **SFD-C: Corner-Swing Arm (150+ acre)**
 
 - 1× PMT + 1× CSA (Swing-Arm Tracker)
-- 1× PFA, 4× VFA, 6× LRZ2, 16× LRZ1 (28 nodes total)
+- 1× PFA, 4× VFA, 6× LRZB, 16× LRZN (28 nodes total)
 - BLE 5.2 distance ranging for ±0.1° joint resolution
 
 **SFD-F: Flood/Surface Irrigation**
 
 - 1× DHU-Lite/Static-PMT at ditch intake
-- 1× PFA at headgate, 4× VFA, 8× LRZ2, 20× LRZ1 (34 nodes total)
+- 1× PFA at headgate, 4× VFA, 8× LRZB, 20× LRZN (34 nodes total)
 - Wetting Front Propagation algorithms
 
 ### 5.8 Subdistrict 1 Scale (1,280 Fields)
@@ -703,8 +703,8 @@ Where m(s) = deterministic trend (satellite), ε(s) = spatially correlated resid
 | PMT V1.7 | 2 | $1,166.50 | $2,333 |
 | PFA V1.9 | 2 | $1,679.50 | $3,359 |
 | VFA V2.1 | 4 | $358.90 | $1,435.60 |
-| LRZ2 | 8 | $54.30 | $434.40 |
-| LRZ1 | 24 | $29.00 | $696 |
+| LRZB | 8 | $54.30 | $434.40 |
+| LRZN | 24 | $29.00 | $696 |
 | DHU V1.9 | 1 | $3,654 | $3,654 |
 | RSS V1.3 | 1 | $212,000 | $212,000 |
 | Installation Labor | - | - | $15,000 |
@@ -1383,7 +1383,7 @@ FarmSense replaces stochastic, intuition-based agriculture with a high-fidelity 
 | **Regional** | RSS (40ft container) | Territory master, blackout-proof | 64-core Threadripper, 50TB NVMe |
 | **District** | DHU (35ft pole) | 100-pivot mesh manager, 30-day cache | Jetson Orin, 128GB PSLC SSD |
 | **Field** | PMT (pivot-mounted) | Edge aggregator, 50m Kriging | ESP32-S3, IMU, LoRa gateway |
-| **Sensors** | VFA/LRZ1/LRZ2/PFA | Ground-truth collection | nRF52840, AES-256, 4+ yr battery |
+| **Sensors** | VFA/LRZN/LRZB/PFA | Ground-truth collection | nRF52840, AES-256, 4+ yr battery |
 
 ---
 

@@ -19,7 +19,7 @@ class HVSSyncService:
     """
     Horizontal-Vertical Sync (HVS) Service.
     Handles the superimposition of advanced VFA deep-profile readings 
-    onto basic LRZ1/LRZ2 lateral nodes using cross-zone offsets.
+    onto basic LRZN/LRZB lateral nodes using cross-zone offsets.
     Integrated with proprietary non-linear soil texture modifiers.
     """
     

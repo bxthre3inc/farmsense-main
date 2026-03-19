@@ -61,7 +61,7 @@ Phase 1 focuses exclusively on **production-proven SDI-12 sensor validation** co
 │  ├── 15/30/60cm depth profiles                                          │
 │  └── Ed25519-signed telemetry                                           │
 │                    ↓                                                     │
-│  L1-2: Edge Compute (LRZ1/LRZ2)                                         │
+│  L1-2: Edge Compute (LRZN/LRZB)                                         │
 │  ├── nRF52840/ESP32-S3 controller                                       │
 │  ├── Local caching + anomaly detection                                   │
 │  └── LoRa 915MHz uplink                                                 │

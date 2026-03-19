@@ -231,11 +231,11 @@ Alert thresholds:
 
 ---
 
-## 5.6 Lateral Root-Zone Surveyor (LRZ1/LRZ2) V1.2
+## 5.6 Lateral Root Zone Surveyor (LRZN/LRZB) V1.2
 
-### 5.6.1 LRZ1 vs LRZ2 Distinction
+### 5.6.1 LRZN vs LRZB Distinction
 
-| Attribute | LRZ1 (Basic) | LRZ2 (Reference) |
+| Attribute | LRZN (Basic) | LRZB (Reference) |
 |-----------|--------------|------------------|
 | **Role** | Spatial density | Calibration anchor |
 | **Sensors** | VWC only | VWC + Temperature |
@@ -251,10 +251,10 @@ Alert thresholds:
 
 | Ring | Radius | Nodes | Type | Purpose |
 |------|--------|-------|------|---------|
-| Center | 0% | 1 | LRZ2 | Pivot point reference |
-| Inner | 25% | 3 | LRZ1 | Near-pivot zone |
-| Middle | 50% | 4 | LRZ2 | Mid-field validation |
-| Outer | 75% | 8 | LRZ1 | Edge interpolation |
+| Center | 0% | 1 | LRZB | Pivot point reference |
+| Inner | 25% | 3 | LRZN | Near-pivot zone |
+| Middle | 50% | 4 | LRZB | Mid-field validation |
+| Outer | 75% | 8 | LRZN | Edge interpolation |
 
 **Placement Strategy:**
 
@@ -270,7 +270,7 @@ Alert thresholds:
 | Pin | Function | Direction |
 |-----|----------|-----------|
 | P0.02 | ADC0 (dielectric) | Input |
-| P0.03 | ADC1 (temperature - LRZ2) | Input |
+| P0.03 | ADC1 (temperature - LRZB) | Input |
 | P0.04 | LoRa NSS | Output |
 | P0.05 | LoRa DIO0 | Input |
 | P0.06 | LoRa DIO1 | Input |
@@ -300,11 +300,11 @@ Alert thresholds:
 
 - Factory: Air (ε=1), water (ε=80)
 - Field: Saturated soil, oven-dry soil
-- Temperature correction (LRZ2 only)
+- Temperature correction (LRZB only)
 
 ### 5.6.5 BOM Comparison
 
-| Component | LRZ1 | LRZ2 | Delta |
+| Component | LRZN | LRZB | Delta |
 |-----------|------|------|-------|
 | nRF52840 | $4.50 | $4.50 | — |
 | LoRa RFM95W | $15.00 | $15.00 | — |
@@ -330,8 +330,8 @@ Alert thresholds:
 | PMT | 1 | $1,166.50 | $1,166.50 |
 | PFA | 1 | $1,679.50 | $1,679.50 |
 | VFA | 2 | $358.90 | $717.80 |
-| LRZ2 | 4 | $54.30 | $217.20 |
-| LRZ1 | 12 | $29.00 | $348.00 |
+| LRZB | 4 | $54.30 | $217.20 |
+| LRZN | 12 | $29.00 | $348.00 |
 | Installation Labor | — | $124.00 | $124.00 |
 | **SFD-P TOTAL** | | | **$4,253.00** |
 
@@ -349,8 +349,8 @@ Alert thresholds:
 |-----------|----------|---------|
 | CSA | 1 | Corner-swing arm tracking |
 | VFA | +2 | Extended coverage |
-| LRZ2 | +2 | Additional validation |
-| LRZ1 | +4 | Extended interpolation |
+| LRZB | +2 | Additional validation |
+| LRZN | +4 | Extended interpolation |
 
 **CSA (Corner-Swing Auditor):**
 
@@ -370,8 +370,8 @@ Alert thresholds:
 | Static-PMT | 1 | Fixed field hub |
 | PFA | 1 | Headgate flow |
 | VFA | 4 | Cross-field transect |
-| LRZ2 | 8 | Validation grid |
-| LRZ1 | 20 | Interpolation density |
+| LRZB | 8 | Validation grid |
+| LRZN | 20 | Interpolation density |
 
 **Special Features:**
 
@@ -409,8 +409,8 @@ Alert thresholds:
 | Component | Units | Unit Cost | Extended |
 |-----------|-------|-----------|----------|
 | VFAs (2 per field) | 2,560 | $358.90 | $918,784 |
-| LRZ2s (4 per field) | 5,120 | $54.30 | $278,016 |
-| LRZ1s (12 per field) | 15,360 | $29.00 | $445,440 |
+| LRZBs (4 per field) | 5,120 | $54.30 | $278,016 |
+| LRZNs (12 per field) | 15,360 | $29.00 | $445,440 |
 | DHUs (full 25) | 19 | $3,654.00 | $69,426 |
 | RSS Expansion | 1 | $200,000 | $200,000 |
 | Fleet (3 trucks) | 3 | $45,000 | $135,000 |
@@ -427,8 +427,8 @@ Alert thresholds:
 | PMT | 1,280 | 0 | 1,280 |
 | PFA | 1,280 | 0 | 1,280 |
 | VFA | 0 | 2,560 | 2,560 |
-| LRZ2 | 0 | 5,120 | 5,120 |
-| LRZ1 | 0 | 15,360 | 15,360 |
+| LRZB | 0 | 5,120 | 5,120 |
+| LRZN | 0 | 15,360 | 15,360 |
 | **Total Active Nodes** | **2,566** | **23,040** | **25,606** |
 
 **Fleet Value:** $6,342,190 CAPEX

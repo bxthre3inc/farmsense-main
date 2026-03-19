@@ -119,7 +119,7 @@ CREATE INDEX idx_fields_owner ON fields(owner_id);</p>
 <p class="text-slate-300 leading-relaxed mb-4">-- Devices (hardware inventory)
 CREATE TABLE devices (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    device_type VARCHAR(50) NOT NULL CHECK (device_type IN ('PMT', 'VFA', 'PFA', 'LRZ1', 'LRZ2', 'DHU', 'RSS')),
+    device_type VARCHAR(50) NOT NULL CHECK (device_type IN ('PMT', 'VFA', 'PFA', 'LRZN', 'LRZB', 'DHU', 'RSS')),
     serial_number VARCHAR(100) UNIQUE NOT NULL,
     hardware_version VARCHAR(20),
     firmware_version VARCHAR(20),

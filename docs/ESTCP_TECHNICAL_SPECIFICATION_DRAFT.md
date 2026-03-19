@@ -50,7 +50,7 @@ Spectroscopy sensor integration is documented as a **Phase 2 enhancement** for f
 ### 3.2 Data Flow
 
 ```
-VFA Sensor (SDI-12) → LRZ1/LRZ2 (Edge Compute) → DHU (Data Hub Unit) 
+VFA Sensor (SDI-12) → LRZN/LRZB (Edge Compute) → DHU (Data Hub Unit) 
   → RSS (Regional Superstation) → AllianceChain (Audit Trail)
 ```
 

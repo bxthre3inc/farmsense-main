@@ -525,7 +525,7 @@
 </table>
 <h2 id="pivot-motion-tracker-pmt-v1.6-critical-field-aggregator">5.3 Pivot Motion Tracker (PMT) V1.6 — CRITICAL: FIELD AGGREGATOR</h2>
 <h3 id="role-definition">5.3.1 Role Definition</h3>
-<p><strong>CRITICAL ARCHITECTURE POINT:</strong> The PMT is the <strong>Primary Field Aggregator</strong>. It is elevated 10-15 feet on the pivot span, above the dense crop canopy. All ground-level devices (VFA, LRZ1, LRZ2, PFA) report <strong>to the PMT</strong>, not directly to the DHU.</p>
+<p><strong>CRITICAL ARCHITECTURE POINT:</strong> The PMT is the <strong>Primary Field Aggregator</strong>. It is elevated 10-15 feet on the pivot span, above the dense crop canopy. All ground-level devices (VFA, LRZN, LRZB, PFA) report <strong>to the PMT</strong>, not directly to the DHU.</p>
 <h3 id="physical-specifications-2">5.3.2 Physical Specifications</h3>
 <table>
 <thead>
@@ -629,7 +629,7 @@
 <tr class="odd">
 <td>Ingress</td>
 <td>900MHz CSS LoRa Mesh</td>
-<td>VFA, LRZ1, LRZ2, PFA</td>
+<td>VFA, LRZN, LRZB, PFA</td>
 </tr>
 <tr class="even">
 <td>Egress</td>
@@ -645,7 +645,7 @@
 </table>
 <h3 id="edge-ebk-computation">5.3.6 Edge-EBK Computation</h3>
 <p><strong>Responsibility:</strong> The PMT performs <strong>Edge-EBK</strong> (Empirical Bayesian Kriging) to generate a 50m-resolution 16×16 probability matrix from field sensor inputs.</p>
-<p><strong>Power:</strong> The FPU processes AES-256 chirps from VFA/LRZ1/LRZ2/PFA into a localized probability matrix. In “COLLAPSE” mode, the FPU focuses 100% compute on the active pivot trajectory.</p>
+<p><strong>Power:</strong> The FPU processes AES-256 chirps from VFA/LRZN/LRZB/PFA into a localized probability matrix. In “COLLAPSE” mode, the FPU focuses 100% compute on the active pivot trajectory.</p>
 <h3 id="payload-structure">5.3.7 Payload Structure</h3>
 <p><strong>Unified Field State Payload (~187 bytes):</strong> - PMT kinematic data (position, velocity, vibration) - 50m Edge-EBK arrays (16×16 grid) - Intercepted VFA/LRZ/PFA telemetry - Timestamp + cryptographic signature</p>
 <h3 id="bom-pmt-v1.6">5.3.8 BOM — PMT V1.6</h3>
@@ -1125,14 +1125,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="lateral-root-zone-surveyor-lrz-v1.2-critical-two-variants">5.6 Lateral Root-Zone Surveyor (LRZ) V1.2 — CRITICAL: TWO VARIANTS</h2>
-<h3 id="critical-distinction-lrz1-vs-lrz2">5.6.1 CRITICAL DISTINCTION: LRZ1 vs LRZ2</h3>
+<h2 id="lateral-root-zone-surveyor-lrz-v1.2-critical-two-variants">5.6 Lateral Root Zone Surveyor (LRZ) V1.2 — CRITICAL: TWO VARIANTS</h2>
+<h3 id="critical-distinction-lrzn-vs-lrzb">5.6.1 CRITICAL DISTINCTION: LRZN vs LRZB</h3>
 <table>
 <thead>
 <tr class="header">
 <th>Feature</th>
-<th>LRZ1 (Basic)</th>
-<th>LRZ2 (Reference)</th>
+<th>LRZN (Basic)</th>
+<th>LRZB (Reference)</th>
 </tr>
 </thead>
 <tbody>
@@ -1183,7 +1183,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="lrz1-specifications-basic">5.6.2 LRZ1 Specifications (Basic)</h3>
+<h3 id="lrzn-specifications-basic">5.6.2 LRZN Specifications (Basic)</h3>
 <table>
 <thead>
 <tr class="header">
@@ -1218,7 +1218,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="lrz2-specifications-reference">5.6.3 LRZ2 Specifications (Reference)</h3>
+<h3 id="lrzb-specifications-reference">5.6.3 LRZB Specifications (Reference)</h3>
 <table>
 <thead>
 <tr class="header">
@@ -1268,7 +1268,7 @@
 </tr>
 <tr class="even">
 <td>P0.03</td>
-<td>ADC1 (temperature - LRZ2 only)</td>
+<td>ADC1 (temperature - LRZB only)</td>
 </tr>
 <tr class="odd">
 <td>P0.28-P0.31</td>
@@ -1291,8 +1291,8 @@
 <thead>
 <tr class="header">
 <th>Component</th>
-<th>LRZ1</th>
-<th>LRZ2</th>
+<th>LRZN</th>
+<th>LRZB</th>
 </tr>
 </thead>
 <tbody>
@@ -1374,13 +1374,13 @@
 <td>$303.80</td>
 </tr>
 <tr class="even">
-<td>LRZ2 (Reference)</td>
+<td>LRZB (Reference)</td>
 <td>4</td>
 <td>$54.30</td>
 <td>$217.20</td>
 </tr>
 <tr class="odd">
-<td>LRZ1 (Basic)</td>
+<td>LRZN (Basic)</td>
 <td>12</td>
 <td>$29.00</td>
 <td>$348.00</td>
@@ -1436,13 +1436,13 @@
 <td>$607.60</td>
 </tr>
 <tr class="odd">
-<td>LRZ2</td>
+<td>LRZB</td>
 <td>6</td>
 <td>$54.30</td>
 <td>$325.80</td>
 </tr>
 <tr class="even">
-<td>LRZ1</td>
+<td>LRZN</td>
 <td>16</td>
 <td>$29.00</td>
 <td>$464.00</td>
@@ -1492,13 +1492,13 @@
 <td>$607.60</td>
 </tr>
 <tr class="even">
-<td>LRZ2</td>
+<td>LRZB</td>
 <td>8</td>
 <td>$54.30</td>
 <td>$434.40</td>
 </tr>
 <tr class="odd">
-<td>LRZ1</td>
+<td>LRZN</td>
 <td>20</td>
 <td>$29.00</td>
 <td>$580.00</td>

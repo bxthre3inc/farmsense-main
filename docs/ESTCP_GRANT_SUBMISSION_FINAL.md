@@ -69,7 +69,7 @@ This project directly supports:
 │         │                │                │                              │
 │         └────────────────┼────────────────┘                              │
 │                          ▼                                              │
-│  LAYER 1: Edge Compute (LRZ1/LRZ2)                                     │
+│  LAYER 1: Edge Compute (LRZN/LRZB)                                     │
 │              ┌─────────────────┐                                        │
 │              │  nRF52840/ESP32  │  Ed25519 signing                       │
 │              │  + Edge Tensor   │  Local caching                         │

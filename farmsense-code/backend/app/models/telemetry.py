@@ -18,8 +18,8 @@ from .base import Base
 
 class HardwareModel(str, PyEnum):
     LRZ = "LRZ"
-    LRZ1 = "LRZ1"
-    LRZ2 = "LRZ2"
+    LRZN = "LRZN"
+    LRZB = "LRZB"
     VFA = "VFA"
     DHU = "DHU"
     RSS = "RSS"

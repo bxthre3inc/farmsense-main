@@ -24,7 +24,7 @@ Drift Aversion: REQUIRED
 | **HAPS** | **Horizontal Profiling Sled**. Sensor configuration for lateral moisture tracking. | L1 |
 | **Kriging** | A geostatistical interpolation method that accounts for spatial autocorrelation. | L2 / L3 |
 | **LPI/LPD** | **Low Probability of Intercept / Detection**. Secure radio emission standards. | L1 |
-| **LRZB / LRZN** | **Long Range Beacon / Long Range Node**. High-density ground-truth sensors. | L1 |
+| **LRZB / LRZN** | **Lateral Root Zone Beacon / Lateral Root Zone Node**. High-density ground-truth sensors. | L1 |
 | **MAD** | **Management Allowable Depletion**. Percentage of water soil can lose before stress. | Logic |
 | **NDVI** | **Normalized Difference Vegetation Index**. Satellite-derived measure of plant health. | L0 / L4 |
 | **PFA** | **Pressure & Flow Analyzer**. Safety actuator and wellhead monitoring node. | L1 |

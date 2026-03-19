@@ -459,6 +459,203 @@ The San Luis Valley (SLV) faces an existential hydro-economic crisis:
 
 ---
 
+# PART VII: SUBSIDY-ENABLED ACCELERATION STRATEGY
+
+## 7.1 The Zero-CAPEX Customer Offer
+
+### 7.1.1 Traditional Model Friction
+
+| Barrier | Traditional FarmTech | FarmSense Subsidy Model |
+|---------|----------------------|-------------------------|
+| Upfront hardware cost | $4,500-6,700 | **$0** |
+| Installation labor | $1,200-2,400 | **$0** |
+| Training & onboarding | $400 | **$0** |
+| Payback period | 12-18 months | **Immediate** |
+| Sales cycle | 6-12 months | **30-60 days** |
+| Customer decision maker | CFO + Operations | Operations only |
+
+### 7.1.2 Customer Value Proposition: "Flip the Switch"
+
+> "We install everything at no cost. You pay $499/month only after you see water savings on your first bill. Cancel anytime."
+
+This transforms the purchase from a **capital decision** (CFO, board approval, depreciation schedules) to an **operational decision** (farm manager, immediate trial).
+
+## 7.2 Subsidy Stack: Non-Dilutive Capital Sources
+
+### 7.2.1 USDA NRCS EQIP (Environmental Quality Incentives Program)
+
+| Program | Coverage | Max per Pivot | FarmSense Eligibility |
+|---------|----------|---------------|----------------------|
+| EQIP Irrigation Efficiency | 50-75% of costs | $450,000/entity | ✓ Precision irrigation sensors |
+| CIG (Conservation Innovation Grants) | Up to 50% | $5M/project | ✓ Digital Water Ledger innovation |
+| RCPP (Regional Conservation Partnership) | 50-75% | Varies by project | ✓ SLV subdistrict eligibility |
+
+**Projected Capture:** $180M over 10 years (13.2% of TCO)
+
+### 7.2.2 Water District Cost-Share Programs
+
+| District | Program | Coverage | Eligible Acres |
+|----------|---------|----------|----------------|
+| RGWCD (Colorado) | Water conservation rebates | $200-400/AF saved | 300,000 (Subdistrict 1) |
+| Metropolitan WD (CA) | Turf replacement rebates | $2/sq ft equivalent | 45,000 |
+| Texas GCDs | Aquifer conservation | $150-300/AF | 150,000 |
+
+**Projected Capture:** $95M over 10 years (7% of TCO)
+
+### 7.2.3 Carbon Credit & ESG Markets
+
+| Credit Type | Rate | Annual Credits per Pivot | 10-Year Value |
+|-------------|------|--------------------------|---------------|
+| Water savings (Verra VM43) | $5-15/AF | 50 AF | $2,500-7,500 |
+| Energy reduction (fuel pumps) | $50-80/ton CO2 | 12 tons | $6,000-9,600 |
+| Soil carbon (reduced tillage) | $20-40/ton | 3 tons | $600-1,200 |
+
+**Projected Capture:** $220M over 10 years (16.2% of TCO)
+
+### 7.2.4 State & Federal Grants
+
+| Grant | Amount | Timeline | Status |
+|-------|--------|----------|--------|
+| USDA SBIR Phase I/II | $300K-$1.1M | 2026-2027 | Applied |
+| DOE Water-Energy Nexus | $2M-$10M | 2027-2028 | Target |
+| Colorado Water Conservation Board | $1M-$5M | 2026-2027 | Target |
+| ARPA-E WATER | $2M-$5M | 2028-2029 | Pipeline |
+| Gates Foundation Ag Adaptation | $1M-$50M | 2027-2030 | Pipeline |
+
+**Projected Capture:** $67M over 10 years (4.9% of TCO)
+
+### 7.2.5 Total Subsidy Stack
+
+| Source | 10-Year Total | % of Hardware/Install Costs |
+|--------|---------------|----------------------------|
+| USDA NRCS EQIP/CIG | $180M | 34.4% |
+| Water district rebates | $95M | 18.1% |
+| Carbon/ESG credits | $220M | 42.0% |
+| Federal/state grants | $67M | 12.8% |
+| **Total Subsidies** | **$562M** | **107.5%** |
+
+**Result:** Subsidies cover **100%+ of hardware and installation costs**. FarmSense captures this value through:
+1. Upfront grant receipts (cash flow positive on deployment)
+2. Ongoing carbon credit revenue share (20% to FarmSense)
+3. Higher SaaS pricing (justified by guaranteed savings)
+
+## 7.3 Recalculated Unit Economics (Subsidy Model)
+
+### 7.3.1 Traditional vs. Subsidy-Enabled
+
+| Metric | Traditional Model | Subsidy-Enabled | Delta |
+|--------|-------------------|-----------------|-------|
+| Customer upfront cost | $6,333 | $0 | -100% |
+| FarmSense hardware revenue | $4,213 | $0 (grants pay) | -100% |
+| FarmSense SaaS revenue | $5,988/year | $6,588/year | +10% |
+| Customer acquisition cost | $2,100 | $850 | -60% |
+| Sales cycle | 180 days | 45 days | -75% |
+| Customer lifetime value | $89,820 | $131,760 | +47% |
+| LTV/CAC ratio | 42.8× | 155× | +262% |
+
+### 7.3.2 FarmSense Revenue Model (Subsidy-Enabled)
+
+| Revenue Stream | Traditional | Subsidy-Enabled | Notes |
+|---------------|-------------|-----------------|-------|
+| Hardware sales | 40% of revenue | 0% | Grants cover 100% |
+| SaaS subscriptions | 55% of revenue | 85% | Higher ARPU, lower churn |
+| Carbon credit share | 0% | 10% | 20% of customer credits |
+| Data/analytics | 5% of revenue | 5% | ESG reporting, insurance |
+| **Blended gross margin** | 58% | **82%** | Pure SaaS economics |
+
+## 7.4 Capital Requirements: Subsidy vs. Traditional
+
+### 7.4.1 Traditional Model (Hardware Revenue)
+
+| Round | Amount | Use of Funds | Timeline |
+|-------|--------|--------------|----------|
+| Seed | $3.5M | SLV pilot (1,280 units) | Q2 2026 |
+| Series A | $12M | Manufacturing scale | Q4 2027 |
+| Series B | $35M | National expansion | Q2 2029 |
+| Series C | $75M | International | Q4 2030 |
+| Series D | $100M | Global scale | Q2 2032 |
+| **Total Dilutive** | **$225.5M** | | |
+
+### 7.4.2 Subsidy-Enabled Model (SaaS-First)
+
+| Round | Amount | Use of Funds | Timeline |
+|-------|--------|--------------|----------|
+| Seed | $5M | SLV pilot + grant writing capacity | Q2 2026 |
+| Series A | $8M | SaaS infrastructure, sales team | Q4 2027 |
+| Series B | $20M | National expansion, carbon credit platform | Q2 2029 |
+| Series C | $45M | International, ESG data products | Q4 2030 |
+| **Total Dilutive** | **$78M** | | |
+| **Non-dilutive grants** | **$562M** | Hardware, installation, R&D | 2026-2035 |
+| **Blended capital** | **$640M** | 88% non-dilutive | |
+
+**Result:** 65% less equity dilution, 82% gross margins, 3× faster growth.
+
+## 7.5 Competitive Moat from Subsidy Capture
+
+### 7.5.1 Why FarmSense Wins the Subsidy Game
+
+| Competitor | Subsidy Eligibility | Why |
+|------------|---------------------|-----|
+| **CropX** | Partial | Cloud-only, no ground-truth verification |
+| **Lindsay FieldNET** | Limited | Manufacturer-specific, not sensor-agnostic |
+| **Satellite-only** | None | No measurable water savings verification |
+| **FarmSense** | **Maximum** | Digital Water Ledger, verified AF savings, legal compliance |
+
+### 7.5.2 Grant Partnership Strategy
+
+| Partnership | Value | Status |
+|-------------|-------|--------|
+| **NRCS Colorado** | $45M EQIP commitment | In discussion |
+| **Verra (carbon registry)** | VM43 methodology approval | Application submitted |
+| **Farmers Edge** | Joint CIG application | LOI signed |
+| **Climate Adaptive Agriculture** | $200M blended finance fund | Pipeline |
+
+## 7.6 Risk Mitigation: Subsidy Dependency
+
+### 7.6.1 If Subsidies Decline...
+
+| Scenario | Probability | Mitigation |
+|----------|-------------|------------|
+| USDA budget cuts | 20% | Diversify: carbon credits, state programs, private ESG |
+| Carbon price collapse | 15% | Long-term offtake agreements at floor prices |
+| Grant approval delays | 30% | Maintain 18-month runway, staged deployment |
+| Water district bankruptcy | 5% | Multi-district diversification |
+
+### 7.6.2 Contingency: Hybrid Model
+
+If subsidies achieve only 70% coverage (vs. 100% target):
+- Deploy **SFD-Lite** configuration: reduced sensor density, $3,200 BOM
+- Offer **0% financing** through FarmSense Capital (partner with First Ag)
+- Customer pays $299/month (hardware embedded, not separated)
+
+## 7.7 Financial Impact Summary
+
+| Metric | Traditional | Subsidy-Enabled | Improvement |
+|--------|-------------|-----------------|-------------|
+| 10-year TCO (company) | $1.362B | $640M | -53% |
+| Equity capital required | $225M | $78M | -65% |
+| Gross margin | 58% | 82% | +41% |
+| Time to 37K pivots (5%) | 5 years | 3.5 years | -30% |
+| Time to 148K pivots (20%) | 10 years | 7 years | -30% |
+| LTV/CAC | 42× | 155× | +269% |
+| 10-year revenue | $2.732B | $2.891B | +6% |
+| 10-year EBITDA | $1.194B | $1.778B | +49% |
+| EBITDA margin | 44% | 61% | +39% |
+
+**Bottom Line:** Subsidy capture transforms FarmSense from a capital-intensive hardware business to a high-margin SaaS platform with venture-scale economics and public-sector leverage.
+
+---
+
+*Subsidy Strategy Version: 1.0*
+*Last Updated: 2026-03-19*
+*Next Review: 2026-06-30*
+*Classification: Confidential — Investor Materials Only*
+
+---
+
+*Document End*
+---
+
 # PART VII: RISK ANALYSIS & MITIGATION
 
 ## 7.1 Technical Risks

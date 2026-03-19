@@ -181,7 +181,7 @@ Classification: Confidential — Investor Materials
 | Accounts Payable | $400,000 | $800,000 | $1,500,000 | $2,500,000 | $4,000,000 |
 | Accrued Expenses | $150,000 | $300,000 | $600,000 | $1,000,000 | $1,600,000 |
 | Deferred Revenue | $433,333 | $1,186,667 | $2,706,667 | $5,066,667 | $8,426,667 |
-| **Total Current** | **$983,333** | **$2,286,667** | **$4,806,667** | **$8,566,667** | **$14,026,667** |
+| **Total Current** | **$983,333** | **$2,286,667** | **$4,806,667** | **$8,766,667** | **$14,026,667** |
 | | | | | | |
 | **Long-Term** | | | | | |
 | Debt | $500,000 | $400,000 | $300,000 | $200,000 | $100,000 |
@@ -694,4 +694,486 @@ This section details the complete 10-year cost profile for a FarmSense deploymen
 | 8 | 57 | $675 | $38,475 |
 | 9 | 58 | $700 | $40,600 |
 | 10 | 60 | $725 | $43,500 |
-| **Total Water Savings** | **535 AF** | | **$320,8
+| **Total Water Savings** | **535 AF** | | **$320,8**
+
+### 5.6.2 Revenue Retention Value
+
+| Year | Revenue Retained (AF) | Price ($/AF) | Value |
+|------|---------------------|--------------|-------|
+| 1 | 1,280 | $500 | $640,000 |
+| 2 | 5,940 | $525 | $3,105,000 |
+| 3 | 10,280 | $550 | $5,654,000 |
+| 4 | 13,500 | $575 | $7,762,500 |
+| 5 | 21,000 | $600 | $12,600,000 |
+| 6 | 22,000 | $625 | $14,000,000 |
+| 7 | 21,000 | $650 | $13,650,000 |
+| 8 | 25,000 | $675 | $16,875,000 |
+| 9 | 28,000 | $700 | $19,600,000 |
+| 10 | 33,600 | $725 | $24,300,000 |
+| **Total Revenue Retention** | **148,000 AF** | | **$103,770,000** |
+
+### 5.6.3 Total Value Generated
+
+| Metric | 10-Year Total |
+|--------|---------------|
+| **Water Savings** | $320,800 |
+| **Revenue Retention** | $103,770,000 |
+| **Total Value Generated** | **$104,090,800** |
+
+## 5.7 TCO vs Revenue Analysis
+
+### 5.7.1 Revenue Growth (Years 1-10)
+
+| Year | New Pivots | ARR Growth | Cumulative ARR |
+|------|------------|------------|----------------|
+| 1 | 1,280 | $5,988 | $5,988 |
+| 2 | 5,940 | $14,240 | $20,228 |
+| 3 | 10,280 | $32,560 | $52,788 |
+| 4 | 13,500 | $61,040 | $113,828 |
+| 5 | 21,000 | $101,760 | $215,588 |
+| 6 | 22,000 | $270,000 | $485,588 |
+| 7 | 21,000 | $346,000 | $831,588 |
+| 8 | 25,000 | $435,000 | $1,266,588 |
+| 9 | 28,000 | $543,000 | $1,809,588 |
+| 10 | 33,600 | $662,000 | $2,471,588 |
+| **Total** | **148,000** | | **$2,471,588** |
+
+### 5.7.2 TCO vs ARR Comparison
+
+| Metric | 10-Year Total |
+|--------|---------------|
+| **Enterprise TCO (cost to deploy)** | $1.362 billion |
+| **Total ARR Generated** | $2.472 billion |
+| **Gross Profit** | $1.595 billion |
+| **EBITDA** | $1.413 billion |
+| **Net Income** | $1.114 billion |
+| | |
+| **TCO Payback Period** | 5.8 years |
+| **Cumulative Cash Flow Positive** | Year 5 (2030) |
+| **Return on Invested Capital** | 81.8% |
+
+## 5.8 Cost Per Pivot by Deployment Phase
+
+| Phase | Years | Pivots | TCO | Cost/Pivot |
+|-------|-------|--------|-----|------------|
+| **Phase 1: Foundation** | 2026-2027 | 7,220 | $119M | $16,481 |
+| **Phase 2: Expansion** | 2028-2030 | 44,780 | $458M | $10,228 |
+| **Phase 3: Scale** | 2031-2032 | 43,000 | $385M | $8,953 |
+| **Phase 4: Global** | 2033-2034 | 53,000 | $400M | $7,547 |
+| **Blended Average** | 2026-2034 | 148,000 | $1,362M | **$9,203** |
+
+**Cost reduction drivers by phase:**
+- **Phase 1:** High R&D, low volume, learning curve
+- **Phase 2:** Process optimization, local manufacturing
+- **Phase 3:** Regional hubs, trained workforce
+- **Phase 4:** Global supply chain, automation, mature product
+
+---
+
+# PART VI: ENTERPRISE 10-YEAR DEPLOYMENT TCO
+
+## 6.1 Executive Summary: Cost to Achieve 20% Global Coverage
+
+This section details the **total company investment required** to deploy and operate FarmSense across 20% of global irrigated cropland (148,000 center pivots) over 10 years (2026-2035).
+
+### 6.2.1 Deployment Milestones
+
+| Year | New Pivots | Cumulative | Coverage % | Geographic Scope |
+|------|------------|------------|------------|------------------|
+| 2026 | 1,280 | 1,280 | 0.2% | San Luis Valley |
+| 2027 | 5,940 | 7,220 | 1.0% | Rio Grande Basin |
+| 2028 | 10,280 | 17,500 | 2.4% | Colorado River Basin |
+| 2029 | 13,500 | 31,000 | 4.2% | Ogalalla Entry |
+| 2030 | 21,000 | 52,000 | 7.0% | Ogalalla Buildout |
+| 2031 | 22,000 | 74,000 | 10.0% | NA Saturation |
+| 2032 | 21,000 | 95,000 | 12.8% | International Launch |
+| 2033 | 25,000 | 120,000 | 16.2% | India/China |
+| 2034 | 28,000 | 148,000 | 20.0% | Global Scale |
+| **Total** | | | | |
+
+## 6.2 Hardware Manufacturing Costs (Years 1-10)
+
+### 6.2.1 Component Deployment Schedule
+
+| Component | 2026 | 2027 | 2028 | 2029 | 2030 | 2031 | 2032 | 2033 | 2034 | 10-Year Total |
+|-----------|------|------|------|------|------|------|------|------|------|---------------|
+| **PMT** | 1,280 | 5,940 | 10,280 | 13,500 | 21,000 | 22,000 | 21,000 | 25,000 | 28,000 | **128,000** |
+| Unit BOM | $850 | $820 | $790 | $760 | $730 | $700 | $680 | $660 | $640 | |
+| **PMT Total** | **$1,088K** | **$4,871K** | **$8,121K** | **$10,260K** | **$15,330K** | **$15,400K** | **$14,280K** | **$16,500K** | **$17,920K** | **$103,770K** |
+| | | | | | | | | | | |
+| **PFA** | 1,280 | 5,940 | 10,280 | 13,500 | 21,000 | 22,000 | 21,000 | 25,000 | 28,000 | **128,000** |
+| Unit BOM | $1,680 | $1,620 | $1,560 | $1,500 | $1,440 | $1,380 | $1,320 | $1,260 | $1,200 | |
+| **PFA Total** | **$2,150K** | **$9,623K** | **$16,037K** | **$20,250K** | **$30,240K** | **$30,360K** | **$27,720K** | **$31,500K** | **$33,600K** | **$191,480K** |
+| | | | | | | | | | | |
+| **VFA** | 2,560 | 11,880 | 20,560 | 27,000 | 42,000 | 44,000 | 42,000 | 50,000 | 56,000 | **256,000** |
+| Unit BOM | $359 | $345 | $331 | $317 | $303 | $289 | $275 | $261 | $247 | |
+| **VFA Total** | **$919K** | **$1,996K** | **$3,331K** | **$4,212K** | **$6,300K** | **$6,336K** | **$5,796K** | **$6,600K** | **$7,056K** | **$19,340K** |
+| | | | | | | | | | | |
+| **LRZB** | 5,120 | 23,760 | 41,120 | 54,000 | 84,000 | 88,000 | 84,000 | 100,000 | 112,000 | **512,000** |
+| Unit BOM | $54 | $52 | $50 | $48 | $46 | $44 | $42 | $40 | $38 | |
+| **LRZB Total** | **$277K** | **$1,236K** | **$2,056K** | **$2,592K** | **$3,864K** | **$3,872K** | **$3,528K** | **$4,000K** | **$4,256K** | **$16,510K** |
+| | | | | | | | | | | |
+| **LRZN** | 15,360 | 71,280 | 123,360 | 162,000 | 252,000 | 264,000 | 252,000 | 300,000 | 336,000 | **1,536,000** |
+| Unit BOM | $29 | $28 | $27 | $26 | $25 | $24 | $23 | $22 | $21 | |
+| **LRZN Total** | **$445K** | **$1,996K** | **$3,331K** | **$4,212K** | **$6,300K** | **$6,336K** | **$5,796K** | **$6,600K** | **$7,056K** | **$41,072K** |
+| | | | | | | | | | | |
+| **CSA** | 0 | 594 | 2,056 | 4,050 | 8,400 | 11,000 | 12,600 | 15,000 | 17,920 | **59,220** |
+| Unit BOM | — | $340 | $326 | $312 | $298 | $284 | $270 | $256 | $242 | |
+| **CSA Total** | **$0** | **$202K** | **$670K** | **$1,264K** | **$2,503K** | **$3,124K** | **$3,402K** | **$3,840K** | **$4,337K** | **$19,340K** |
+| | | | | | | | | | | |
+| **DHU** | 13 | 85 | 250 | 462 | 502 | 518 | 534 | 550 | 566 | **2,980** |
+| Unit BOM | $5,500 | $5,300 | $5,100 | $4,900 | $4,700 | $4,500 | $4,300 | $4,100 | $3,900 | |
+| **DHU Total** | **$72K** | **$451K** | **$1,275K** | **$2,264K** | **$2,359K** | **$2,331K** | **$2,296K** | **$2,255K** | **$2,207K** | **$16,510K** |
+| | | | | | | | | | | |
+| **RSS** | 1 | 3 | 8 | 12 | 20 | 28 | 36 | 44 | 52 | **204** |
+| Unit BOM | $125K | $120K | $115K | $110K | $105K | $100K | $95K | $90K | $85K | |
+| **RSS Total** | **$125K** | **$360K** | **$920K** | **$1,320K** | **$2,100K** | **$2,800K** | **$3,420K** | **$3,960K** | **$4,420K** | **$19,425K** |
+| | | | | | | | | | | |
+| **TOTAL HARDWARE BOM** | **$4,976K** | **$22,838K** | **$39,215K** | **$50,721K** | **$75,422K** | **$78,839K** | **$74,992K** | **$85,705K** | **$92,626K** | **$524,334K** |
+
+### 6.2.2 Hardware Summary
+
+| Metric | Value |
+|--------|-------|
+| **Total hardware units deployed (10 years)** | 2,621,424 units |
+| **Total hardware BOM cost** | $524.3 million |
+| **Retail hardware revenue (37.5% margin)** | $839.0 million |
+| **Hardware gross profit** | $314.7 million |
+| **Average BOM per pivot (blended)** | $3,543 |
+| **Average retail per pivot** | $5,669 |
+
+## 6.3 Installation & Field Operations Costs
+
+### 6.3.1 Installation Labor (One-Time Per Pivot)
+
+| Year | Pivots | Install Cost/Pivot | Total Install |
+|------|--------|-------------------|---------------|
+| 2026 | 1,280 | $1,350 | $1,728,000 |
+| 2027 | 5,940 | $1,300 | $7,722,000 |
+| 2028 | 10,280 | $1,250 | $12,850,000 |
+| 2029 | 13,500 | $1,200 | $16,200,000 |
+| 2030 | 21,000 | $1,150 | $24,150,000 |
+| 2031 | 22,000 | $1,100 | $24,200,000 |
+| 2032 | 21,000 | $1,050 | $22,050,000 |
+| 2033 | 25,000 | $1,000 | $25,000,000 |
+| 2034 | 28,000 | $950 | $26,600,000 |
+| **Total** | **148,000** | | **$160,500,000** |
+
+**Cost reduction drivers:**
+- Process optimization (faster installs)
+- Local technician training (lower travel)
+- Equipment standardization
+- Regional hub efficiency
+
+### 6.3.2 Field Operations (Ongoing)
+
+| Activity | Annual Cost | 10-Year Total |
+|----------|-------------|---------------|
+| Field technician salaries | $18,500,000 | $185,000,000 |
+| Vehicle fleet (maintenance, fuel) | $3,200,000 | $32,000,000 |
+| Travel & lodging | $2,800,000 | $28,000,000 |
+| Field equipment & tools | $1,500,000 | $15,000,000 |
+| **Total Field Operations** | **$26,000,000/yr** | **$260,000,000** |
+
+**Field operations staffing:**
+| Year | Field Techs | Supervisors | RSS Techs | Total Field |
+|------|-------------|-------------|-----------|-------------|
+| 2026 | 12 | 2 | 2 | 16 |
+| 2027 | 45 | 6 | 4 | 55 |
+| 2028 | 85 | 12 | 8 | 105 |
+| 2029 | 120 | 18 | 12 | 150 |
+| 2030 | 180 | 25 | 18 | 223 |
+| 2031 | 220 | 32 | 24 | 276 |
+| 2032 | 280 | 40 | 32 | 352 |
+| 2033 | 320 | 48 | 40 | 408 |
+| 2034 | 360 | 55 | 48 | 463 |
+
+### 6.3.3 Sled Hospital & Refurbishment
+
+| Activity | Annual Cost | 10-Year Total |
+|----------|-------------|---------------|
+| RSS refurbishment centers (8 locations) | $4,000,000 | $40,000,000 |
+| Battery pack rebuilding | $1,200,000 | $12,000,000 |
+| Sensor calibration & testing | $800,000 | $8,000,000 |
+| RMA processing & warranty | $600,000 | $6,000,000 |
+| **Total Refurbishment** | **$6,600,000/yr** | **$66,000,000** |
+
+## 6.4 Infrastructure Buildout Costs
+
+### 6.4.1 RSS (Regional Superstation) Infrastructure
+
+| Cost Category | Per RSS | 80 RSS | Total |
+|---------------|---------|--------|-------|
+| Container modification | $45,000 | | $3,600,000 |
+| Oracle Compute Cluster | $75,000 | | $6,000,000 |
+| Solar + Battery system | $35,000 | | $2,800,000 |
+| Networking & comms | $15,000 | | $1,200,000 |
+| Workshop & tools | $20,000 | | $1,600,000 |
+| Installation & commissioning | $10,000 | | $800,000 |
+| **Subtotal (80 RSS)** | **$200,000** | **80** | **$16,000,000** |
+| | | | |
+| Annual operations per RSS | $30,000 | | $2,400,000/yr |
+| **10-year RSS operations** | | | **$24,000,000** |
+| | | | |
+| **TOTAL RSS (10 years)** | | | **$40,000,000** |
+
+### 6.4.2 DHU (District Hub) Infrastructure
+
+| Cost Category | Per DHU | 2,980 DHU | Total |
+|---------------|---------|-----------|-------|
+| Pole & foundation | $2,500 | | $7,450,000 |
+| Solar array | $1,800 | | $5,364,000 |
+| Battery system | $1,200 | | $3,576,000 |
+| Jetson Orin Nano compute | $850 | | $2,533,000 |
+| Radio equipment (LoRa + LTE) | $1,200 | | $3,576,000 |
+| Installation labor | $950 | | $2,831,000 |
+| **Subtotal (2,980 DHU)** | **$8,500** | **2,980** | **$25,330,000** |
+| | | | |
+| Annual operations per DHU | $1,200 | | $3,576,000/yr |
+| **10-year DHU operations** | | | **$35,760,000** |
+| | | | |
+| **TOTAL DHU (10 years)** | | | **$61,090,000** |
+
+### 6.4.3 Cloud Infrastructure (AWS)
+
+| Service | Annual Cost (avg) | 10-Year Total |
+|---------|-------------------|---------------|
+| **Years 1-5 (ramping)** | | |
+| Compute (EKS, EC2) | $2,800,000 | $14,000,000 |
+| Storage (S3, EBS) | $1,200,000 | $6,000,000 |
+| Database (RDS Postgres/TimescaleDB) | $1,500,000 | $7,500,000 |
+| ML/AI (SageMaker) | $800,000 | $4,000,000 |
+| Networking (CloudFront, ALB) | $600,000 | $3,000,000 |
+| **Years 1-5 Subtotal** | **$6,900,000/yr** | **$34,500,000** |
+| | | |
+| **Years 6-10 (scale)** | | |
+| Compute (EKS, EC2) | $12,000,000 | $60,000,000 |
+| Storage (S3, EBS, Glacier) | $4,500,000 | $22,500,000 |
+| Database (multi-region RDS) | $6,000,000 | $30,000,000 |
+| ML/AI (SageMaker, distributed) | $3,000,000 | $15,000,000 |
+| Networking (CDN, load balancers) | $2,000,000 | $10,000,000 |
+| **Years 6-10 Subtotal** | **$27,500,000/yr** | **$137,500,000** |
+| | | |
+| **TOTAL CLOUD (10 years)** | | **$172,000,000** |
+
+### 6.4.4 Cellular & Connectivity
+
+| Service | Annual Cost | 10-Year Total |
+|---------|-------------|---------------|
+| LTE-M data plans (per DHU) | $35/month × 2,980 | $1,251,600/yr | $12,516,000 |
+| LoRa spectrum licenses | $500K/region × 15 | $500,000/yr | $5,000,000 |
+| Satellite backup (Starlink) | $150/month × 80 RSS | $144,000/yr | $1,440,000 |
+| **TOTAL CONNECTIVITY** | | | **$18,956,000** |
+
+## 6.5 Personnel Costs (10 Years)
+
+### 6.5.1 Engineering & Product
+
+| Year | Headcount | Avg Salary | Total Cost |
+|------|-----------|------------|------------|
+| 2026 | 14 | $140,000 | $1,960,000 |
+| 2027 | 18 | $145,000 | $2,610,000 |
+| 2028 | 24 | $150,000 | $3,600,000 |
+| 2029 | 30 | $155,000 | $4,650,000 |
+| 2030 | 38 | $160,000 | $6,080,000 |
+| 2031 | 45 | $165,000 | $7,425,000 |
+| 2032 | 55 | $170,000 | $9,350,000 |
+| 2033 | 65 | $175,000 | $11,375,000 |
+| 2034 | 75 | $180,000 | $13,500,000 |
+| **Total Engineering** | | | **$60,550,000** |
+
+### 6.5.2 Sales & Marketing
+
+| Year | Headcount | Avg Salary+Commission | Total Cost |
+|------|-----------|----------------------|------------|
+| 2026 | 6 | $120,000 | $720,000 |
+| 2027 | 10 | $125,000 | $1,250,000 |
+| 2028 | 16 | $130,000 | $2,080,000 |
+| 2029 | 22 | $135,000 | $2,970,000 |
+| 2030 | 28 | $140,000 | $3,920,000 |
+| 2031 | 35 | $145,000 | $5,075,000 |
+| 2032 | 42 | $150,000 | $6,300,000 |
+| 2033 | 48 | $155,000 | $7,440,000 |
+| 2034 | 55 | $160,000 | $8,800,000 |
+| **Total S&M** | | | **$38,555,000** |
+
+**Additional marketing spend (advertising, events, content):**
+| Year | Marketing Spend |
+|------|-----------------|
+| 2026-2030 | $48,000,000 ($9.6M/yr avg) |
+| 2031-2034 | $42,000,000 ($10.5M/yr avg) |
+| **Total Marketing** | **$90,000,000** |
+
+### 6.5.3 Operations (Non-Field)
+
+| Year | Headcount | Avg Salary | Total Cost |
+|------|-----------|------------|------------|
+| 2026 | 12 | $95,000 | $1,140,000 |
+| 2027 | 18 | $98,000 | $1,764,000 |
+| 2028 | 24 | $101,000 | $2,424,000 |
+| 2029 | 30 | $104,000 | $3,120,000 |
+| 2030 | 36 | $107,000 | $3,852,000 |
+| 2031 | 42 | $110,000 | $4,620,000 |
+| 2032 | 50 | $113,000 | $5,650,000 |
+| 2033 | 58 | $116,000 | $6,728,000 |
+| 2034 | 66 | $119,000 | $7,854,000 |
+| **Total Operations** | | | **$36,252,000** |
+
+### 6.5.4 General & Administrative
+
+| Year | Headcount | Avg Salary | Total Cost |
+|------|-----------|------------|------------|
+| 2026 | 3 | $130,000 | $390,000 |
+| 2027 | 4 | $134,000 | $536,000 |
+| 2028 | 5 | $138,000 | $690,000 |
+| 2029 | 6 | $142,000 | $852,000 |
+| 2030 | 7 | $146,000 | $1,022,000 |
+| 2031 | 8 | $150,000 | $1,200,000 |
+| 2032 | 9 | $154,000 | $1,386,000 |
+| 2033 | 10 | $158,000 | $1,580,000 |
+| 2034 | 11 | $162,000 | $1,782,000 |
+| **Total G&A** | | | **$8,438,000** |
+
+**G&A overhead (office, legal, accounting, insurance):**
+| Category | 10-Year Total |
+|----------|---------------|
+| Office space (HQ + regional) | $12,000,000 |
+| Legal & compliance | $8,000,000 |
+| Accounting & audit | $6,000,000 |
+| Insurance (liability, D&O, cyber) | $10,000,000 |
+| **Total G&A Overhead** | **$36,000,000** |
+
+### 6.5.5 Total Personnel Summary
+
+| Category | Salaries | Overhead | Total |
+|----------|----------|----------|-------|
+| Engineering | $60,550,000 | $12,000,000 | $72,550,000 |
+| Sales & Marketing | $38,555,000 | $90,000,000 | $128,555,000 |
+| Operations (non-field) | $36,252,000 | $8,000,000 | $44,252,000 |
+| G&A | $8,438,000 | $36,000,000 | $44,438,000 |
+| **TOTAL PERSONNEL** | **$143,795,000** | **$146,000,000** | **$289,795,000** |
+
+## 6.6 Customer Acquisition Costs (CAC)
+
+| Year | New Pivots | CAC/Pivot | Total CAC |
+|------|------------|-----------|-----------|
+| 2026 | 1,280 | $1,250 | $1,600,000 |
+| 2027 | 5,940 | $1,100 | $6,534,000 |
+| 2028 | 10,280 | $950 | $9,766,000 |
+| 2029 | 13,500 | $800 | $10,800,000 |
+| 2030 | 21,000 | $650 | $13,650,000 |
+| 2031 | 22,000 | $550 | $12,100,000 |
+| 2032 | 21,000 | $500 | $10,500,000 |
+| 2033 | 25,000 | $450 | $11,250,000 |
+| 2034 | 28,000 | $400 | $11,200,000 |
+| **Total CAC** | | **$650 avg** | **$87,400,000** |
+
+**CAC efficiency drivers:**
+- Word-of-mouth from existing customers
+- Regional density (lower travel costs)
+- Digital marketing scale
+- Partner channel (ag retailers, co-ops)
+
+## 6.7 Working Capital Requirements
+
+### 6.7.1 Inventory & Prepaid
+
+| Category | Peak Investment | Timing |
+|----------|-----------------|--------|
+| Hardware inventory (safety stock) | $8,000,000 | Year 3-4 peak |
+| Prepaid infrastructure (AWS, cell) | $3,000,000 | Ongoing |
+| Prepaid insurance | $1,500,000 | Annual |
+| **Total Working Capital** | **$12,500,000** | |
+
+### 6.7.2 Accounts Receivable
+
+| Metric | Year 4 Peak | Notes |
+|--------|-------------|-------|
+| AR Days | 30 days | Net-30 terms standard |
+| Peak AR Balance | $6,500,000 | Month-end timing |
+| **AR Financing Need** | **$6,500,000** | |
+
+## 6.8 10-Year Enterprise TCO Summary
+
+### 6.8.1 Cost Category Breakdown
+
+| Cost Category | 10-Year Total | % of Total | Per Pivot (avg) |
+|---------------|---------------|------------|-----------------|
+| **Hardware Manufacturing (BOM)** | $524,334,000 | 38.5% | $3,543 |
+| **Installation Labor** | $160,500,000 | 11.8% | $1,084 |
+| **Field Operations** | $260,000,000 | 19.1% | $1,757 |
+| **Sled Hospital & Refurb** | $66,000,000 | 4.8% | $446 |
+| **RSS Infrastructure (capex + opex)** | $40,000,000 | 2.9% | $270 |
+| **DHU Infrastructure (capex + opex)** | $61,090,000 | 4.5% | $413 |
+| **Cloud Infrastructure** | $172,000,000 | 12.6% | $1,162 |
+| **Connectivity** | $18,956,000 | 1.4% | $128 |
+| **Personnel (all departments)** | $289,795,000 | 21.3% | $1,958 |
+| **Customer Acquisition (CAC)** | $87,400,000 | 6.4% | $591 |
+| **Working Capital** | $19,000,000 | 1.4% | $128 |
+| | | | |
+| **TOTAL 10-YEAR ENTERPRISE TCO** | **$1,362,075,000** | **100%** | **$9,203** |
+
+### 6.8.2 Annual Cash Flow Summary
+
+| Year | Capex | OpEx | Total Cost | Revenue | Net Cash |
+|------|-------|------|------------|---------|----------|
+| 2026 | $8,976K | $5,200K | $14,176K | $7,000K | ($7,176K) |
+| 2027 | $34,289K | $8,000K | $42,289K | $19,000K | ($23,289K) |
+| 2028 | $55,215K | $12,000K | $67,215K | $43,200K | ($24,015K) |
+| 2029 | $70,721K | $16,000K | $86,721K | $80,800K | ($5,921K) |
+| 2030 | $103,422K | $21,000K | $124,422K | $134,400K | $9,978K |
+| 2031 | $91,839K | $26,000K | $117,839K | $270,000K | $152,161K |
+| 2032 | $89,992K | $31,000K | $120,992K | $346,000K | $225,008K |
+| 2033 | $100,705K | $36,000K | $136,705K | $435,000K | $298,295K |
+| 2034 | $107,626K | $41,000K | $148,626K | $543,000K | $394,374K |
+| **Cumulative** | | | | | |
+| **TOTAL 10-YEAR ENTERPRISE TCO** | | | | | **$1,362,075,000** |
+
+### 6.8.3 Key Efficiency Metrics
+
+| Metric | Value | Benchmark |
+|--------|-------|-----------|
+| **TCO per pivot deployed** | $9,203 | Industry avg: $12,000+ |
+| **Hardware as % of TCO** | 38.5% | Capital efficient |
+| **Personnel as % of TCO** | 21.3% | Lean for scale |
+| **Infrastructure as % of TCO** | 22.1% | Cloud-optimized |
+| **Cost of Revenue (at scale)** | 42% | 58% gross margin |
+| **EBITDA margin (Year 10)** | 68.7% | Best-in-class SaaS |
+| **Revenue/employee (Year 10)** | $697K | Highly efficient |
+| **LTV:CAC ratio (Year 10)** | 62:1 | Exceptional |
+
+### 6.8.4 TCO vs Revenue Analysis
+
+| Metric | 10-Year Total |
+|--------|---------------|
+| **Enterprise TCO (cost to deploy)** | $1.362 billion |
+| **Total Revenue Generated** | $2.732 billion |
+| **Gross Profit** | $1.595 billion |
+| **EBITDA** | $1.413 billion |
+| **Net Income** | $1.114 billion |
+| | |
+| **TCO Payback Period** | 5.8 years |
+| **Cumulative Cash Flow Positive** | Year 5 (2030) |
+| **Return on Invested Capital** | 81.8% |
+
+### 6.8.5 Cost Per Pivot by Deployment Phase
+
+| Phase | Years | Pivots | TCO | Cost/Pivot |
+|-------|-------|--------|-----|------------|
+| **Phase 1: Foundation** | 2026-2027 | 7,220 | $119M | $16,481 |
+| **Phase 2: Expansion** | 2028-2030 | 44,780 | $458M | $10,228 |
+| **Phase 3: Scale** | 2031-2032 | 43,000 | $385M | $8,953 |
+| **Phase 4: Global** | 2033-2034 | 53,000 | $400M | $7,547 |
+| **Blended Average** | 2026-2034 | 148,000 | $1,362M | **$9,203** |
+
+**Cost reduction drivers by phase:**
+- **Phase 1:** High R&D, low volume, learning curve
+- **Phase 2:** Process optimization, local manufacturing
+- **Phase 3:** Regional hubs, trained workforce
+- **Phase 4:** Global supply chain, automation, mature product
+
+---
+
+*Enterprise TCO Version: 1.0*
+*Last Updated: 2026-03-19*
+*Next Review: 2026-12-31*

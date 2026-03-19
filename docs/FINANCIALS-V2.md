@@ -140,7 +140,7 @@ Classification: Confidential — Investor & Board Materials
 | 5. Maintenance | $85M | 2% |
 | 6. Utility Partnerships | $340M | 8% |
 | 7. Input Optimization | $1,258M | 28% |
-| **TOTAL ANNUAL REVENUE** | **$4.18 billion** | **100% |
+| **TOTAL ANNUAL REVENUE** | **$4.18 billion** | **100%** |
 
 ---
 
@@ -353,6 +353,10 @@ Classification: Confidential — Investor & Board Materials
 
 ---
 
+# PART IX: FREEMIUM INFRASTRUCTURE MODEL
+
+> **Strat**
+
 *Document Version: 3.0 (Super-Scale Model)*
 *Last Updated: 2026-03-19*
 *Next Review: Quarterly (board meeting)*
@@ -360,3 +364,115 @@ Classification: Confidential — Investor & Board Materials
 
 **Proprietary & Confidential — bxthre3 inc.**
 **For Internal Use and Accredited Investors Only**
+
+---
+
+# PART IX: FREEMIUM INFRASTRUCTURE MODEL
+
+> **Strategy Shift (2026-03-19):** $0 basic tier + infrastructure subsidy = instant planetary-scale adoption
+
+## 9.1 The $0 Basic Tier
+
+| Feature | Basic ($0) | Plus ($199) | Enterprise ($399) |
+|---------|------------|-------------|-------------------|
+| **Resolution** | 50m virtual | 20m hybrid | 1m ground-truth |
+| **Update frequency** | 4 hours | 1 hour | Real-time |
+| **Sensor depth** | Surface only | 16" hybrid | 48" full profile |
+| **Irrigation control** | Recommendations only | Auto-VRI | Full autonomy |
+| **Water ledger** | Basic export | Compliance PDF | Court-ready DAP |
+| **Support** | Community | Email | Dedicated agronomist |
+| **Adoption target** | **100% of farmers** | 35% upsell | 15% upsell |
+
+**Why $0 works:**
+- Farmers get immediate value (weather + satellite + basic soil models)
+- Zero friction = word-of-mouth viral growth
+- Data network effects: more users = better models for everyone
+- Natural upsell path as farmers see ROI on premium tiers
+
+## 9.2 Infrastructure Subsidy Stack (100% Coverage)
+
+| Funding Source | Amount | % of Total | Mechanism |
+|--------------|--------|------------|-----------|
+| **USDA EQIP** | $410M | 14% | Per-acre conservation payments |
+| **Carbon pre-sales** | $580M | 20% | Forward contracts (10-year) |
+| **State water bonds** | $340M | 12% | Colorado, California, Texas, Nebraska |
+| **Green bonds (ESG)** | $520M | 18% | 4% coupon, A-rated |
+| **DFI blended finance** | $440M | 15% | IFC, DFC, EIB co-investment |
+| **Insurance partnerships** | $290M | 10% | Premium reductions funded by risk reduction |
+| **Commodity traders** | $160M | 6% | Data exclusivity pre-payments |
+| **Impact investors** | $145M | 5% | PRIs, mission-related investments |
+| **TOTAL SUBSIDY** | **$2.89B** | **100%** | **100% of hardware costs covered** |
+
+## 9.3 Unit Economics: Freemium Model
+
+| Metric | Before | After | Delta |
+|--------|--------|-------|-------|
+| **Customer Acquisition Cost** | $1,850 | **$75** | -96% |
+| **Free tier conversion to Plus** | — | 35% | New |
+| **Free tier conversion to Enterprise** | — | 15% | New |
+| **Blended ARPU** | $4,250 | **$3,190** | -25% |
+| **LTV/CAC** | 34.5× | **850×** | +2,362% |
+
+## 9.4 10-Year Revenue: Freemium Model
+
+| Stream | Year 10 | Notes |
+|--------|---------|-------|
+| **SaaS** | $2.8B | 148M acres × 30% paid × $63/mo avg |
+| **Water trading** | $1.8B | Higher volume from 100% coverage |
+| **Carbon credits** | $580M | All acres eligible |
+| **Data licensing** | $920M | 148M acres of ground-truth |
+| **Input optimization** | $1.9B | Network effects on recommendations |
+| **Insurance partnerships** | $340M | Risk reduction revenue share |
+| **Utility services** | $480M | Municipal water management |
+| **TOTAL** | **$8.8B** | **70% higher than paid-only model** |
+
+## 9.5 The Flywheel
+
+```
+    FREE TIER (148M acres)
+         ↓
+    Massive data generation
+         ↓
+    Better ML models → better recommendations
+         ↓
+    Farmer ROI visible → upsell to Plus/Enterprise
+         ↓
+    More sensors → more data → better models
+         ↓
+    [LOOP]
+```
+
+## 9.6 Capital Requirements: Freemium
+
+| Phase | Capital | Use | Source |
+|-------|---------|-----|--------|
+| **2026** | $15M | Free tier build, SLV proof | Seed + angels |
+| **2027** | $45M | Infrastructure, viral growth | Series A |
+| **2028** | $120M | Global free rollout | Series B + green bonds |
+| **2029** | $300M | Upsell engine, monetization | Series C + DFI |
+| **2030-2035** | $2.4B | Scale operations | Debt + revenue |
+| **TOTAL** | **$2.88B** | — | **88% non-dilutive** |
+
+## 9.7 Founder Outcome: Freemium Model
+
+| Metric | Value |
+|--------|-------|
+| Year 10 revenue | $8.8B |
+| EBITDA margin | 78% (higher at scale) |
+| EBITDA | $6.9B |
+| Exit valuation (12×) | **$82.8B** |
+| Founder stake at exit | **31%** (less dilution) |
+| **Founder value** | **$25.7 billion** |
+
+**Why higher valuation:**
+- Network effects from 148M acres
+- Data moat (impossible to replicate)
+- 100% market penetration
+- Infrastructure classification = utility multiples
+
+---
+
+*Freemium Model Version: 1.0*
+*Updated: 2026-03-19*
+*Status: RECOMMENDED STRATEGY*
+

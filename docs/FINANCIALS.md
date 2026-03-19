@@ -556,7 +556,142 @@ Classification: Confidential — Investor Materials
 
 ---
 
-*Document Version: 2.1*
-*Last Updated: 2026-03-19*
-*Next Review: 2026-06-30*
-*Classification: Confidential — Investor Materials Only*
+# PART V: 10-YEAR TOTAL COST OF OWNERSHIP (TCO) ANALYSIS
+
+## 5.1 TCO Overview: Customer Perspective
+
+This section details the complete 10-year cost profile for a FarmSense deployment, enabling customers to evaluate ROI and compare against status quo irrigation practices.
+
+**Baseline Configuration:** SFD-20 Standard Pivot (126-acre center pivot)
+- 1× PMT (Pivot Motion Tracker)
+- 1× PFA (Pressure & Flow Analyzer)  
+- 2× VFA (Vertical Field Anchor)
+- 4× LRZB (Lateral Root Zone Beacon)
+- 12× LRZN (Lateral Root Zone Node)
+
+## 5.2 Initial Deployment Costs (Year 0)
+
+| Cost Category | Amount | Notes |
+|---------------|--------|-------|
+| **Hardware** | | |
+| PMT V1.7 | $1,250 | Field hub with RTK GNSS |
+| PFA V1.9 | $1,680 | Wellhead sentry with flow meter |
+| VFA V2.1 (2×) | $718 | Deep-truth probes |
+| LRZB V1.2 (4×) | $217 | Reference sensors |
+| LRZN V1.2 (12×) | $348 | Density sensors |
+| **Hardware Subtotal** | **$4,213** | BOM + 37.5% margin |
+| | | |
+| **Installation** | | |
+| Field survey & design | $350 | Soil mapping, LoRa planning |
+| VFA installation (2×) | $400 | 48" burial, Alpha-Sled insertion |
+| LRZ installation (16×) | $320 | $20/node positioning |
+| PMT mounting | $150 | Span bracket installation |
+| PFA installation | $200 | Wellhead pipe clamp |
+| System commissioning | $300 | Network join, calibration |
+| **Installation Subtotal** | **$1,720** | One-time |
+| | | |
+| **Training & Setup** | | |
+| Farmer training (4 hrs) | $200 | Dashboard, alerts, worksheets |
+| Initial calibration | $150 | MAD tuning, threshold setting |
+| Documentation | $50 | Field maps, sensor locations |
+| **Training Subtotal** | **$400** | One-time |
+| | | |
+| **Year 0 Total** | **$6,333** | CapEx + onboarding |
+
+## 5.3 Annual Subscription Costs (Years 1-10)
+
+| Year | Monthly Rate | Annual Cost | Cumulative |
+|------|--------------|-------------|------------|
+| 1 | $499 | $5,988 | $5,988 |
+| 2 | $499 | $5,988 | $11,976 |
+| 3 | $499 | $5,988 | $17,964 |
+| 4 | $499 | $5,988 | $23,952 |
+| 5 | $474 | $5,688 | $29,640 |
+| 6 | $474 | $5,688 | $35,328 |
+| 7 | $449 | $5,388 | $40,716 |
+| 8 | $449 | $5,388 | $46,104 |
+| 9 | $424 | $5,088 | $51,192 |
+| 10 | $424 | $5,088 | $56,280 |
+
+**Subscription Escalation:**
+- Years 1-4: Full price ($499/month)
+- Year 5: 5% volume discount (2+ fields)
+- Year 7: 10% volume discount (6+ fields)
+- Year 9: 15% volume discount (16+ fields)
+
+## 5.4 Maintenance & Replacement Schedule
+
+### 5.4.1 Scheduled Maintenance (Annual)
+
+| Activity | Frequency | Cost | 10-Year Total |
+|----------|-----------|------|---------------|
+| System health check | Annual | $150 | $1,500 |
+| Sensor calibration | Annual | $200 | $2,000 |
+| LoRa range test | Annual | $50 | $500 |
+| Firmware updates | Annual | $0 | $0 (OTA) |
+| **Annual Maintenance** | | **$400** | **$4,000** |
+
+### 5.4.2 Component Replacement Schedule
+
+| Component | Lifespan | Replacement Year | Cost | Qty | Total |
+|-----------|----------|------------------|------|-----|-------|
+| **Battery Replacement** | | | | | |
+| PMT battery pack | 4 years | 4, 8 | $85 | 2× | $170 |
+| VFA battery cartridges | 4 years | 4, 8 | $45 | 10× | $450 |
+| LRZ battery (all) | 4 years | 4, 8 | $12 | 32× | $384 |
+| **Battery Subtotal** | | | | | **$1,004** |
+| | | | | | |
+| **Sensor Replacement** | | | | | |
+| VFA advanced sensors | 7 years | 7 | $150 | 6× | $900 |
+| LRZ sensor degradation | 6 years | 6, 10 | $25 | 48× | $1,200 |
+| PFA flow meter service | 5 years | 5, 10 | $200 | 2× | $400 |
+| **Sensor Subtotal** | | | | | **$2,500** |
+| | | | | | |
+| **Electronics Refresh** | | | | | |
+| LoRa module upgrade | 8 years | 8 | $15 | 20× | $300 |
+| MCU firmware board | 10 years | — | $0 | — | $0 |
+| **Electronics Subtotal** | | | | | **$300** |
+| | | | | | |
+| **Total Maintenance & Replacement** | | | | | **$4,804** |
+
+## 5.5 10-Year Total Cost of Ownership
+
+| Cost Category | Amount | % of Total |
+|---------------|--------|------------|
+| **Initial Deployment (Year 0)** | | |
+| Hardware | $4,213 | 5.6% |
+| Installation | $1,720 | 2.3% |
+| Training | $400 | 0.5% |
+| **Year 0 Subtotal** | **$6,333** | **8.4%** |
+| | | |
+| **Subscription (Years 1-10)** | | |
+| Annual fees | $56,280 | 74.9% |
+| | | |
+| **Maintenance & Replacement** | | |
+| Scheduled maintenance | $4,000 | 5.3% |
+| Battery replacement | $1,004 | 1.3% |
+| Sensor replacement | $2,500 | 3.3% |
+| Electronics refresh | $300 | 0.4% |
+| **Maintenance Subtotal** | **$7,804** | **10.4%** |
+| | | |
+| **10-Year TCO** | **$70,417** | **100%** |
+| **Annualized TCO** | **$7,042** | |
+| **Monthly TCO** | **$587** | |
+
+## 5.6 Value Generated Over 10 Years
+
+### 5.6.1 Water Savings Value
+
+| Year | Water Saved (AF) | Price ($/AF) | Value |
+|------|------------------|--------------|-------|
+| 1 | 45 | $500 | $22,500 |
+| 2 | 48 | $525 | $25,200 |
+| 3 | 50 | $550 | $27,500 |
+| 4 | 52 | $575 | $29,900 |
+| 5 | 54 | $600 | $32,400 |
+| 6 | 55 | $625 | $34,375 |
+| 7 | 56 | $650 | $36,400 |
+| 8 | 57 | $675 | $38,475 |
+| 9 | 58 | $700 | $40,600 |
+| 10 | 60 | $725 | $43,500 |
+| **Total Water Savings** | **535 AF** | | **$320,8

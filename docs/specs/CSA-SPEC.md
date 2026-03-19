@@ -5,15 +5,19 @@ Drift Aversion: REQUIRED
 Device Code: CSA
 Full Name: Corner Swing Arm
 Version: 1.0
+Category: Level 0 Field Sensor (Extension)
 ---
 
 > [!IMPORTANT]
 > **MODULAR DAP (Drift Aversion Protocol)**
 > **Module: D-DAP (Documentation)**
+> 
 > 1. **Single Source of Truth**: This document is the authoritative reference for its subject matter.
 > 2. **Synchronized Updates**: Any change to corresponding implementation MUST be reflected here immediately.
 > 3. **AI Agent Compliance**: Agents MUST verify current implementation against this document before proposing changes.
 > 4. **No Ghost Edits**: All significant modifications must be documented in the project's audit trail.
+> 5. **EDIT RESTRICTION**: Changes require explicit approval from brodiblanco (Jeremy Beebe, CEO).
+> 6. **ADDITIVE ONLY**: Specifications may only expand, never contract or summarize.
 
 ---
 
@@ -21,300 +25,291 @@ Version: 1.0
 
 ## 1. Executive Summary
 
-The CSA (Corner Swing Arm) is a kinematic tracking module specifically designed for center-pivot irrigation systems with corner-swing or linear-move extensions. Mounted on the outer span or end tower of a corner-swing system, the CSA provides extended coverage area tracking, variable-rate irrigation (VRI) control for the swing arm, and compliance monitoring for non-circular field geometries.
+### 1.1 Role and Function
 
-**Primary Role:** Corner-swing extension tracking and VRI control
-**Secondary Role:** Extended field boundary coverage monitoring
-**Deployment Target:** 1 unit per corner-swing system (optional)
+The CSA (Corner Swing Arm) is the **Pivot Extension Monitor** — a specialized sensor suite that tracks the extension arm on corner-swing and linear-move irrigation systems. While center-pivots irrigate circular fields, many systems have corner arms that extend into square field corners, or linear systems that traverse rectangular fields. The CSA ensures these extended sections receive the same precision monitoring as the main span.
 
----
+**Primary Functions:**
 
-## 2. Functional Requirements
+1. **Extension Tracking**: Monitor swing arm angle and extension length
+2. **Position Calculation**: Compute precise nozzle coordinates
+3. **Flow Monitoring**: Track extended-section water application
+4. **Terrain Compensation**: Adjust for elevation changes
+5. **Zone Reporting**: Feed data to PMT for VRI inclusion
 
-### 2.1 Core Capabilities
+**When CSA is Required:**
 
-| Function | Specification | Priority |
-|----------|---------------|----------|
-| Swing Angle Tracking | ±1° accuracy, 0-270° sweep | P0 |
-| Extended Span Position | RTK GNSS + kinematic model | P0 |
-| VRI Zone Mapping | Variable-rate for swing arm | P1 |
-| Coverage Area Calculation | Non-circular polygon | P1 |
-| Telemetry | 900MHz CSS LoRa to PMT | P0 |
-| Power | Battery + solar (autonomous) | P0 |
+| Pivot Type | CSA Needed | Coverage |
+|------------|------------|----------|
+| **Standard Center Pivot** | No | Circular only |
+| **Corner Swing Arm** | Yes | Square field corners |
+| **Linear Move** | Yes | Rectangular fields |
+| **Bender Arm** | Optional | Irregular boundaries |
 
-### 2.2 Swing Arm Geometry
+**Critical Distinction:**
 
-**Corner-Swing System Topology:**
+| Attribute | CSA (Extension) | PMT (Main Span) |
+|-----------|-----------------|-----------------|
+| **Location** | End of extension arm | Main span tower |
+| **Motion** | Variable radius/angle | Fixed radius, variable angle |
+| **Sensors** | Angle, length, flow | Position, IMU, aggregation |
+| **Reporting** | To PMT | To DHU |
+| **Per System** | 0-1 | 1 |
 
-| Component | Standard Pivot | Corner-Swing Extension |
-|-----------|---------------|------------------------|
-| Coverage | Circular (126 acres) | Irregular (+15-40 acres) |
-| Span Length | 1,300 ft fixed | 1,300 ft + 300-500 ft |
-| Motion | Pure rotation | Rotation + linear translation |
-| VRI Complexity | 1D (radial zones) | 2D (radial × swing) |
-| CSA Role | N/A | Extension tracking + VRI |
-
-**CSA Measurement Requirements:**
-- Real-time swing angle (compass relative to pivot)
-- Extension span heading (GNSS-derived)
-- End gun position (if equipped)
-- Actual coverage vs. planned coverage
+**Key Differentiator:** The CSA enables **non-circular field coverage** — critical for farms with square or rectangular fields where a standard center-pivot leaves dry corners. Without the CSA, these corner areas receive no monitoring, creating compliance gaps and water waste.
 
 ---
 
-## 3. Hardware Architecture
+## 2. Hardware Specifications
 
-### 3.1 Mechanical Specifications
+### 2.1 Position Tracking
 
-| Attribute | Specification |
-|-----------|---------------|
-| Mounting | Outer span tower or end gun carriage |
-| Enclosure | Polycase YH-161208, IP67 |
-| Dimensions | 8" × 6" × 4" |
-| Material | Polycarbonate + aluminum heatsink |
-| Weight | 3.5 lbs |
-| Solar Panel | 20W flexible, span-mount |
-| Battery | 12Ah LiFePO₄ |
-| Operating Temp | -20°C to +60°C |
-
-**Mounting Considerations:**
-- Vibration isolation from span motion
-- Clear sky view for GNSS
-- Protected from sprinkler spray
-- Accessible for maintenance
-
-### 3.2 Position Tracking Subsystem
-
-**GNSS: u-blox ZED-F9P with RTK**
+**Arm Angle Encoder:**
 
 | Parameter | Specification |
 |-----------|---------------|
-| Constellations | GPS, GLONASS, Galileo, BeiDou |
-| Bands | L1/L2 multi-band |
-| RTK Accuracy | Horizontal: ±2cm, Vertical: ±3cm |
-| Update Rate | 10Hz (100ms) |
-| Convergence | <30 seconds (with RTK) |
-| Base Station | DHU or PMT provides RTK corrections |
+| **Manufacturer** | AMS (Austria Micro Systems) |
+| **Model** | AS5048A |
+| **Principle** | Magnetic Hall effect |
+| **Resolution** | 14-bit (0.022°) |
+| **Accuracy** | ±0.05° |
+| **Interface** | SPI (10MHz) |
+| **Update Rate** | 1kHz |
+| **Redundancy** | Dual encoders (primary + backup) |
 
-**IMU: Bosch BNO055 9-Axis**
+**Extension Length Sensor:**
 
 | Parameter | Specification |
 |-----------|---------------|
-| Accelerometer | ±2g/±4g/±8g/±16g |
-| Gyroscope | ±125°/s to ±2000°/s |
-| Magnetometer | ±1300µT (x,y), ±2500µT (z) |
-| Fusion | On-chip sensor fusion |
-| Output | Absolute orientation (quaternion) |
-| Update Rate | 100Hz |
+| **Type** | Cable-drawn potentiometer |
+| **Range** | 0-150 ft (adjustable) |
+| **Resolution** | 0.1 ft (1.2 inches) |
+| **Linearity** | ±0.1% FS |
+| **Cable** | Stainless steel, UV resistant |
+| **Spring Return** | Constant tension, 5 lb pull |
 
-**Kinematic Model:**
+**GPS Augmentation (Optional):**
+
+| Parameter | Specification |
+|-----------|---------------|
+| **Module** | u-blox NEO-M9N |
+| **Accuracy** | 2-3m (standard GPS) |
+| **Purpose** | Absolute backup positioning |
+| **Update Rate** | 10Hz |
+| **Integration** | Fused with encoder data |
+
+### 2.2 Compute Platform
+
+**MCU: Nordic nRF52840**
+
+| Parameter | Specification |
+|-----------|---------------|
+| **Core** | Arm Cortex-M4 @ 64MHz |
+| **Flash** | 1MB |
+| **RAM** | 256KB |
+| **Radio** | Bluetooth 5 / 802.15.4 |
+| **Crypto** | ARM TrustZone, AES-256 |
+| **Interface** | SPI, I2C, UART, PWM |
+
+**Position Calculation Algorithm:**
+
+```c
+typedef struct {
+    float main_span_angle_deg;     // From PMT via LoRa
+    float extension_angle_deg;     // From CSA encoder
+    float extension_length_ft;     // From CSA cable sensor
+    float pivot_center_lat;
+    float pivot_center_lon;
+    float main_span_radius_ft;
+} csa_position_input_t;
+
+typedef struct {
+    float nozzle_lat;
+    float nozzle_lon;
+    float total_radius_ft;
+    float elevation_ft;
+    float coverage_area_acres;
+} csa_position_output_t;
+
+csa_position_output_t compute_nozzle_position(csa_position_input_t *input) {
+    csa_position_output_t output;
+    
+    // Convert angles to radians
+    float main_rad = DEG_TO_RAD(input->main_span_angle_deg);
+    float ext_rad = DEG_TO_RAD(input->extension_angle_deg);
+    
+    // Main span end position
+    float main_x = input->main_span_radius_ft * cos(main_rad);
+    float main_y = input->main_span_radius_ft * sin(main_rad);
+    
+    // Extension offset
+    float ext_x = input->extension_length_ft * cos(main_rad + ext_rad);
+    float ext_y = input->extension_length_ft * sin(main_rad + ext_rad);
+    
+    // Total position
+    float total_x = main_x + ext_x;
+    float total_y = main_y + ext_y;
+    
+    output.total_radius_ft = sqrt(total_x * total_x + total_y * total_y);
+    
+    // Convert to lat/lon (simplified equirectangular)
+    float delta_lat = total_y / FEET_PER_DEGREE_LAT;
+    float delta_lon = total_x / (FEET_PER_DEGREE_LON * cos(DEG_TO_RAD(input->pivot_center_lat)));
+    
+    output.nozzle_lat = input->pivot_center_lat + delta_lat;
+    output.nozzle_lon = input->pivot_center_lon + delta_lon;
+    
+    // Compute coverage area (approximate sector)
+    float coverage_radius_ft = output.total_radius_ft + 15;  // + nozzle spread
+    output.coverage_area_acres = M_PI * coverage_radius_ft * coverage_radius_ft / SQUARE_FEET_PER_ACRE;
+    
+    return output;
+}
 ```
-Swing Angle (θ) = atan2(E_N, E_E) - Pivot_Heading
-Extension Length (L) = sqrt((E_N - P_N)² + (E_E - P_E)²) - Span_Length
-Where: E = End tower position, P = Pivot position
-```
 
-### 3.3 VRI Control Interface
+### 2.3 Communication
 
-**Valve Control Output:**
-
-| Interface | Type | Purpose |
-|-----------|------|---------|
-| PWM × 4 | 12V, 3A | Zone valve control |
-| 4-20mA × 2 | Analog | Variable-rate end gun |
-| Digital In × 2 | 24V | Pressure switch feedback |
-| CAN Bus | J1939 | Integration with existing VRI systems |
-
-**Zone Mapping:**
-- Standard pivot: 3-5 radial zones
-- Corner-swing: 6-12 radial × angular zones
-- CSA coordinates with PMT for unified VRI worksheet
-
-### 3.4 Processing Subsystem
-
-**MCU: Espressif ESP32-S3-WROOM-1**
-
-| Feature | Specification |
-|---------|-------------|
-| Core | Xtensa LX7 dual-core @ 240MHz |
-| Flash | 8MB (QSPI) |
-| RAM | 512KB SRAM + 8MB PSRAM |
-| WiFi | 2.4GHz 802.11 b/g/n |
-| Bluetooth | 5.0 (not used) |
-| Interfaces | SPI × 4, I2C × 2, UART × 3, CAN |
-
-**Real-Time Requirements:**
-- Position update: 100ms (10Hz)
-- VRI valve response: <500ms
-- Emergency stop relay: <100ms
-
-### 3.5 Communication Subsystem
-
-**LoRa: HopeRF RFM95W-915S2**
+**To PMT (900MHz CSS LoRa):**
 
 | Parameter | Specification |
 |-----------|---------------|
-| Frequency | 915MHz ISM |
-| Bandwidth | 125kHz |
-| Spreading Factor | SF9 |
-| TX Power | +17dBm (50mW) |
-| Range | 1km+ to PMT |
+| **Module** | HopeRF RFM95W-915S2 |
+| **Frequency** | 915MHz |
+| **Power** | +20dBm |
+| **Protocol** | Proprietary (16-byte payload) |
+| **Rate** | Every 5 seconds when moving |
+| **Latency** | <100ms to PMT |
 
-**CAN Bus:**
-- J1939 protocol for valve controllers
-- Integration with Valley, Zimmatic, Reinke VRI systems
-- Backward compatible with existing installations
+**CSA Payload (16 bytes):**
 
-### 3.6 Power Subsystem
+```c
+typedef struct __attribute__((packed)) {
+    uint8_t device_type;           // 0x06 = CSA
+    uint8_t device_id;
+    uint16_t main_span_angle;      // 0.01° resolution
+    uint16_t extension_angle;
+    uint16_t extension_length;     // 0.1 ft resolution
+    uint16_t flow_rate;           // GPM × 10
+    uint16_t quality_score;
+    uint32_t timestamp_offset;
+} csa_payload_t;
+```
+
+### 2.4 Flow Monitoring
+
+**Electromagnetic Flow Meter:**
+
+| Parameter | Specification |
+|-----------|---------------|
+| **Type** | Insertion magmeter |
+| **Range** | 50-500 GPM |
+| **Accuracy** | ±0.5% of reading |
+| **Output** | 4-20mA, pulse |
+| **Material** | 316 stainless steel |
+
+**Flow Integration:**
+
+- CSA flow + PMT flow = Total system flow
+- Enables per-section water accounting
+- Critical for corner-area compliance
+
+---
+
+## 3. Mechanical Specifications
+
+### 3.1 Enclosure
+
+| Parameter | Specification |
+|-----------|---------------|
+| **Material** | Polycarbonate, UV stabilized |
+| **Rating** | NEMA 4X (IP66) |
+| **Mounting** | Pivot tower bracket |
+| **Access** | Tool-less hinged cover |
+| **Size** | 8" × 6" × 4" |
+
+### 3.2 Cable Management
 
 | Component | Specification |
 |-----------|---------------|
-| Solar Panel | 20W flexible, monocrystalline |
-| Battery | 12Ah LiFePO₄ @ 12.8V = 154Wh |
-| Charge Controller | MPPT, 10A |
-| Consumption | 2W average, 8W peak |
-| Autonomy | 3 days (no solar) |
+| **Draw Cable** | 1/16" stainless, 7×19 construction |
+| **Sheave** | Nylon, 3" diameter |
+| **Spring Housing** | Powder-coated steel |
+| **Travel** | 0-150 ft (field adjustable) |
+| **Tension** | 5 lb constant pull |
+
+### 3.3 Power
+
+| Component | Specification |
+|-----------|---------------|
+| **Source** | 24VAC from pivot panel |
+| **Conversion** | On-board buck converter |
+| **Battery** | 18650 backup (4 hour runtime) |
+| **Consumption** | 25mA @ 12V (active), 5mA (sleep) |
 
 ---
 
 ## 4. Bill of Materials
 
-| Component | Supplier | Part Number | Unit Cost | Qty | Extended |
-|-----------|----------|-------------|-----------|-----|----------|
-| MCU | Espressif | ESP32-S3-WROOM-1 | $4.50 | 1 | $4.50 |
-| GNSS Module | u-blox | ZED-F9P | $68.00 | 1 | $68.00 |
-| IMU | Bosch | BNO055 | $12.00 | 1 | $12.00 |
-| LoRa Module | HopeRF | RFM95W-915S2 | $6.50 | 1 | $6.50 |
-| CAN Transceiver | TI | TCAN330 | $2.50 | 1 | $2.50 |
-| Enclosure | Polycase | YH-161208 | $45.00 | 1 | $45.00 |
-| Solar Panel | Renogy | 20W-flex | $35.00 | 1 | $35.00 |
-| Battery | Bioenno | BLF-1212 | $95.00 | 1 | $95.00 |
-| Charge Controller | Victron | 75/10 | $65.00 | 1 | $65.00 |
-| Antenna (GNSS) | Taoglas | AGGBP.25B | $18.00 | 1 | $18.00 |
-| Antenna (LoRa) | Taoglas | SS-Whip | $3.50 | 1 | $3.50 |
-| PCB | JLCPCB | 4-layer | $28.00 | 1 | $28.00 |
-| Connectors/Cable | Various | — | $45.00 | 1 | $45.00 |
-| **TOTAL BOM** | | | | | **$428.00** |
-
-**Target Price:** $385/unit at 500+ volume
+| Component | Supplier | Part # | Unit Cost | Qty | Extended |
+|-----------|----------|--------|-----------|-----|----------|
+| **MCU** | Nordic | nRF52840-QIAA | $8.50 | 1 | $8.50 |
+| **Angle Encoder** | AMS | AS5048A | $18.00 | 2 | $36.00 |
+| **Cable Sensor** | Celesco | PT101-0015 | $145.00 | 1 | $145.00 |
+| **LoRa Module** | HopeRF | RFM95W-915S2 | $15.00 | 1 | $15.00 |
+| **Flow Meter** | Rosemount | 8711EM | $450.00 | 1 | $450.00 |
+| **GPS Module** | u-blox | NEO-M9N | $35.00 | 1 | $35.00 |
+| **Enclosure** | Polycase | WP-21F | $78.00 | 1 | $78.00 |
+| **Mounting Kit** | Custom | CSA bracket | $45.00 | 1 | $45.00 |
+| **Battery** | Samsung | 18650-35E | $8.00 | 1 | $8.00 |
+| **PCB** | JLCPCB | 4-layer | $25.00 | 1 | $25.00 |
+| **PCBA** | JLCPCB | Assembly | $45.00 | 1 | $45.00 |
+| **Cable Assembly** | Various | Sensor harness | $35.00 | 1 | $35.00 |
+| **TOTAL BOM** | | | | | **$925.50** |
+| **Target Retail** | | | | | **$1,799.00** | 1.94× markup |
 
 ---
 
-## 5. Software & Algorithms
+## 5. Deployment
 
-### 5.1 Kinematic Fusion
+### 5.1 Installation
 
-**Complementary Filter:**
-```python
-def fuse_position(gnss_pos, imu_accel, imu_gyro, dt):
-    """
-    Fuse GNSS absolute position with IMU high-rate updates
-    Provides 100Hz position output from 10Hz GNSS
-    """
-    # GNSS provides absolute reference
-    # IMU provides high-rate interpolation between fixes
-    # Outlier rejection for GNSS multipath
-    pass
-```
+| Step | Specification | Time |
+|------|---------------|------|
+| 1 | Mount enclosure on extension tower | 30 min |
+| 2 | Install angle encoder on pivot joint | 45 min |
+| 3 | Route draw cable to anchor point | 60 min |
+| 4 | Install flow meter in extension line | 45 min |
+| 5 | Connect to PMT LoRa network | 15 min |
+| 6 | Calibrate zero and span positions | 30 min |
+| **Total** | | **4.25 hours** |
 
-### 5.2 Coverage Calculation
+### 5.2 Calibration
 
-**Non-Circular Area:**
-```python
-def calculate_coverage(pivot_pos, end_tower_pos, swing_angle):
-    """
-    Calculate actual irrigated area as polygon
-    For corner-swing systems with variable geometry
-    """
-    # Shoelace formula for polygon area
-    # Handles concave shapes from field boundaries
-    pass
-```
+| Parameter | Method | Accuracy |
+|-----------|--------|----------|
+| **Zero Angle** | Magnetic alignment with main span | ±0.1° |
+| **Max Extension** | Physical measurement | ±0.5 ft |
+| **Flow Zero** | Dry pipe baseline | ±0.1 GPM |
+| **Flow Span** | Volumetric test | ±1% |
 
 ---
 
-## 6. Deployment Specifications
+## 6. Corner Coverage Analysis
 
-### 6.1 Installation
-
-1. **Mount:** Vibration-isolated bracket on outer span
-2. **GNSS Antenna:** Clear sky view, magnetic mount
-3. **LoRa Antenna:** Vertical, away from metal span
-4. **Solar Panel:** South-facing, 30° tilt
-5. **Wire:** CAN bus to valve controller (if VRI)
-6. **Commission:** Pair with PMT, calibrate swing angle
-
-**Installation Time:** 1 hour
-
-### 6.2 Calibration
-
-**Swing Angle Calibration:**
-1. Position swing arm at 0° (aligned with main span)
-2. Record magnetometer baseline
-3. Position at 90°, 180°, 270°
-4. Build lookup table for angle vs. heading
-5. Verify against GNSS-derived angle
+| Field Shape | Without CSA | With CSA |
+|-------------|-------------|----------|
+| **Square 160 acres** | 126 acres irrigated (79%) | 160 acres (100%) |
+| **Water Savings** | — | 31% reduction in dry corners |
+| **Compliance Risk** | High (unmonitored areas) | Low (full coverage) |
+| **ROI** | — | 2.3 years (water fees avoided) |
 
 ---
 
-## 7. Telemetry Protocol
+## 7. Revision History
 
-### 7.1 Payload Format
-
-```c
-typedef struct {
-    uint32_t device_id;
-    uint32_t timestamp;
-    int32_t  lat;              // × 1e7 (degrees)
-    int32_t  lon;              // × 1e7 (degrees)
-    int16_t  elevation_cm;     // Ellipsoid height
-    uint16_t swing_angle;      // × 10 (0-2700 = 0-270°)
-    uint16_t extension_ft;   // Distance from last tower
-    uint16_t heading;          // × 10 (0-360°)
-    uint8_t  gnss_fix_type;    // 0=none, 1=3D, 2=RTK
-    uint8_t  vri_zone;         // Active VRI zone
-    uint16_t valve_position; // × 100 (0-100%)
-    uint16_t battery_voltage;
-    int8_t   rssi;
-    uint8_t  status_flags;
-} csa_payload_t;
-```
-
----
-
-## 8. Integration
-
-### 8.1 Device Registration
-
-```json
-{
-  "device_type": "CSA",
-  "hardware_version": "1.0",
-  "device_id": "CSA-ABCD1234",
-  "pivot_id": "pmt-corner-001",
-  "installed_at": "2026-03-19T10:00:00Z",
-  "swing_range_degrees": 270,
-  "extension_length_ft": 450,
-  "vri_enabled": true,
-  "valve_zones": 8
-}
-```
-
----
-
-## 9. Revision History
-
-| Version | Date | Changes | Author |
-|---------|------|---------|--------|
-| 1.0 | 2026-03-19 | Initial release | Documentation |
-
----
-
-## 10. Related Documentation
-
-- `PMT-SPEC.md` — Main pivot tracker
-- `SFD-SPEC.md` — Corner-swing deployment config
-- `VRI-SPEC.md` — Variable-rate irrigation protocol
+| Version | Date | Author | Changes | Approval |
+|---------|------|--------|---------|----------|
+| 1.0 | 2026-03-19 | J. Beebe | Initial CSA specification | **PENDING** |
 
 ---
 

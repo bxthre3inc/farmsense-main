@@ -222,342 +222,341 @@ Classification: Confidential — Investor Materials
 
 ---
 
-# PART III: UNIT ECONOMICS DETAIL
+# PART III: 10-YEAR GLOBAL EXPANSION MODEL
 
-## 3.1 Customer Lifetime Value (LTV)
+## 3.1 Global Market Sizing & Coverage Targets
 
-### 3.1.1 LTV Calculation
+### 3.1.1 Total Addressable Market (TAM)
 
-| Component | Value | Notes |
-|-----------|-------|-------|
-| Average monthly subscription | $424 | Blended Enterprise w/ volume discount |
-| Gross margin % | 78% | Software-heavy at scale |
-| Monthly gross profit | $331 | $424 × 0.78 |
-| Average customer lifetime | 84 months | 7 years |
-| **Subscription LTV** | **$27,804** | $331 × 84 |
-| | | |
-| Hardware profit (one-time) | $1,275 | $4,500 retail - $3,225 BOM |
-| Services revenue (annual) | $350 | Calibration + support |
-| Services gross profit | $280 | 80% margin |
-| Services LTV (7 years) | $1,960 | $280 × 7 |
-| | | |
-| **Total LTV** | **$31,039** | Per field |
+| Metric | Value | Source |
+|--------|-------|--------|
+| Global irrigated cropland | 301.8 million hectares | FAO AQUASTAT 2024 |
+| Irrigated cropland (acres) | 745.7 million acres | Conversion |
+| Center-pivot irrigated area | ~300 million acres | Estimated 40% of irrigated |
+| Center-pivot count (global) | ~740,000 pivots | 405 acres/pivot avg |
+| Annual addressable spend | $8.9 billion | $24K/pivot/year water cost avg |
 
-### 3.1.2 LTV by Customer Segment
+### 3.1.2 Coverage Targets
 
-| Segment | Monthly Price | Lifetime | LTV |
-|---------|---------------|----------|-----|
-| Small (< 100 acres) | $149 | 60 months | $9,816 |
-| Mid (100-500 acres) | $299 | 84 months | $23,490 |
-| Large (500+ acres) | $424 | 96 months | $35,136 |
-| Subdistrict (1,280 fields) | $349 | 120 months | $35,784 |
-| **Blended** | **$315** | **84 months** | **$28,266** |
+| Milestone | Year | Target Coverage | Pivots | Cumulative ARR |
+|-------------|------|-----------------|--------|----------------|
+| **5% Global** | 2030 | 5.0% of global pivots | 37,000 | $185M ARR |
+| **10% Global** | 2032 | 10.0% of global pivots | 74,000 | $370M ARR |
+| **20% Global** | 2035 | 20.0% of global pivots | 148,000 | $740M ARR |
+| **30% Global** | 2038 | 30.0% of global pivots | 222,000 | $1.11B ARR |
 
-## 3.2 Customer Acquisition Cost (CAC)
+### 3.1.3 Regional Expansion Phases
 
-### 3.2.1 CAC by Channel
+**Phase 1: North American Core (2026-2029)** — Foundation
+| Region | Pivots | Start | Full Coverage |
+|----------|--------|-------|---------------|
+| San Luis Valley, CO | 1,280 | 2026 | 2027 |
+| Rio Grande Basin, NM/TX | 8,500 | 2027 | 2028 |
+| Colorado River Basin | 25,000 | 2028 | 2029 |
+| **Phase 1 Total** | **34,780** | | |
 
-| Channel | Marketing Spend | Sales Spend | Customers | CAC | LTV:CAC |
-|---------|-------------------|-------------|-----------|-----|---------|
-| Direct sales | $200,000 | $400,000 | 800 | $750 | 37.7:1 |
-| NRCS partnerships | $50,000 | $100,000 | 480 | $312 | 90.6:1 |
-| Referral program | $25,000 | $25,000 | 320 | $156 | 181.2:1 |
-| Trade shows | $75,000 | $75,000 | 160 | $938 | 30.1:1 |
-| Digital/Content | $50,000 | $25,000 | 120 | $625 | 45.2:1 |
-| **Blended** | **$400,000** | **$625,000** | **1,900** | **$539** | **52.4:1** |
+**Phase 2: North American Expansion (2030-2032)** — Scale
+| Region | Pivots | Start | Full Coverage |
+|----------|--------|-------|---------------|
+| Ogalalla Aquifer (NE, KS, OK, TX) | 45,000 | 2030 | 2032 |
+| Columbia River Basin | 12,000 | 2030 | 2031 |
+| Mississippi River Delta | 18,000 | 2031 | 2032 |
+| Great Lakes Region | 8,000 | 2031 | 2032 |
+| **Phase 2 Total** | **83,000** | | |
 
-### 3.2.2 CAC Payback Period
+**Phase 3: International Expansion (2033-2038)** — Global
+| Region | Pivots | Start | Full Coverage |
+|----------|--------|-------|---------------|
+| Australia (Murray-Darling) | 15,000 | 2033 | 2035 |
+| India (Punjab, Haryana) | 35,000 | 2033 | 2036 |
+| China (North China Plain) | 28,000 | 2034 | 2037 |
+| Brazil (Cerrado) | 12,000 | 2035 | 2037 |
+| Argentina (Pampas) | 8,000 | 2035 | 2038 |
+| Middle East (Israel, Saudi) | 6,000 | 2036 | 2038 |
+| **Phase 3 Total** | **104,000** | | |
 
-| Metric | Value |
-|--------|-------|
-| Blended CAC | $539 |
-| Monthly gross profit per customer | $331 |
-| CAC payback period | **1.6 months** |
+## 3.2 10-Year Financial Projections (2026-2035)
 
-**Exceptional unit economics** — industry benchmark is 12-18 months for SaaS.
+### 3.2.1 Income Statement (P&L) — Years 6-10
 
-## 3.3 Field Deployment Economics
+| Line Item | 2031 | 2032 | 2033 | 2034 | 2035 |
+|-----------|------|------|------|------|------|
+| **Active Pivots** | **52,000** | **74,000** | **95,000** | **120,000** | **148,000** |
+| | | | | | |
+| **Revenue** | | | | | |
+| Subscription | $220,000,000 | $296,000,000 | $380,000,000 | $480,000,000 | $592,000,000 |
+| Hardware (new deployments) | $35,000,000 | $25,000,000 | $20,000,000 | $18,000,000 | $15,000,000 |
+| Services (consulting, data) | $15,000,000 | $25,000,000 | $35,000,000 | $45,000,000 | $55,000,000 |
+| **Total Revenue** | **$270,000,000** | **$346,000,000** | **$435,000,000** | **$543,000,000** | **$662,000,000** |
+| | | | | | |
+| **Cost of Revenue** | | | | | |
+| Hardware | ($8,750,000) | ($6,250,000) | ($5,000,000) | ($4,500,000) | ($3,750,000) |
+| Infrastructure | ($21,600,000) | ($27,680,000) | ($34,800,000) | ($43,440,000) | ($52,960,000) |
+| Support | ($10,800,000) | ($13,840,000) | ($17,400,000) | ($21,720,000) | ($26,480,000) |
+| Processing | ($5,400,000) | ($6,920,000) | ($8,700,000) | ($10,860,000) | ($13,240,000) |
+| **Total COR** | **($46,550,000)** | **($54,690,000)** | **($65,900,000)** | **($80,520,000)** | **($96,430,000)** |
+| | | | | | |
+| **Gross Profit** | **$223,450,000** | **$291,310,000** | **$369,100,000** | **$462,480,000** | **$565,570,000** |
+| **Gross Margin %** | **82.8%** | **84.2%** | **84.9%** | **85.2%** | **85.4%** |
+| | | | | | |
+| **Operating Expenses** | | | | | |
+| Engineering | ($12,000,000) | ($16,000,000) | ($20,000,000) | ($24,000,000) | ($28,000,000) |
+| Sales & Marketing | ($15,000,000) | ($18,000,000) | ($22,000,000) | ($26,000,000) | ($30,000,000) |
+| Operations | ($12,000,000) | ($16,000,000) | ($20,000,000) | ($24,000,000) | ($28,000,000) |
+| G&A | ($5,000,000) | ($6,000,000) | ($7,000,000) | ($8,000,000) | ($9,000,000) |
+| Regional Offices | ($8,000,000) | ($10,000,000) | ($12,000,000) | ($14,000,000) | ($16,000,000) |
+| **Total OpEx** | **($52,000,000)** | **($66,000,000)** | **($81,000,000)** | **($96,000,000)** | **($111,000,000)** |
+| | | | | | |
+| **Operating Income (EBITDA)** | **$171,450,000** | **$225,310,000** | **$288,100,000** | **$366,480,000** | **$454,570,000** |
+| **EBITDA Margin %** | **63.5%** | **65.1%** | **66.2%** | **67.5%** | **68.7%** |
+| | | | | | |
+| Depreciation | ($2,500,000) | ($3,500,000) | ($4,500,000) | ($5,500,000) | ($6,500,000) |
+| Interest | ($500,000) | ($400,000) | ($300,000) | ($200,000) | ($100,000) |
+| **EBIT** | **$168,450,000** | **$221,410,000** | **$283,300,000** | **$360,780,000** | **$447,970,000** |
+| | | | | | |
+| Taxes (21%) | ($35,374,500) | ($46,496,100) | ($59,493,000) | ($75,763,800) | ($94,073,700) |
+| | | | | | |
+| **Net Income** | **$133,075,500** | **$174,913,900** | **$223,807,000** | **$285,016,200** | **$353,896,300** |
+| **Net Margin %** | **49.3%** | **50.6%** | **51.5%** | **52.5%** | **53.5%** |
 
-### 3.3.1 SFD Kit Cost Structure
+### 3.2.2 Key Metrics — Years 6-10
 
-| Component | Unit Cost | Qty | Total |
-|-----------|-----------|-----|-------|
-| VFA | $359 | 2 | $718 |
-| LRZN | $29 | 12 | $348 |
-| LRZB | $54 | 4 | $216 |
-| PFA | $1,680 | 1 | $1,680 |
-| PMT | $845 | 1 | $845 |
-| Installation labor | $500 | 1 | $500 |
-| Shipping/logistics | $150 | 1 | $150 |
-| **Total SFD-20 Cost** | | | **$4,457** |
-| **Retail Price** | | | **$6,500** |
-| **Gross Margin** | | | **31.4%** |
-
-### 3.3.2 Deployment ROI by Field Size
-
-| Field Size | Water Use (AF) | Savings @ 20% | Value @ $500/AF | SFD Cost | Payback |
-|------------|----------------|-----------------|-----------------|----------|---------|
-| 65 acres | 130 AF | 26 AF | $13,000 | $6,500 | 6 months |
-| 126 acres | 252 AF | 50 AF | $25,200 | $6,500 | 3 months |
-| 250 acres | 500 AF | 100 AF | $50,000 | $6,500 | 1.6 months |
-
----
-
-# PART IV: FUNDING REQUIREMENTS
-
-## 4.1 Seed Round ($3.5M) — Q2 2026
-
-### 4.1.1 Use of Proceeds
-
-| Category | Amount | % | Details |
-|----------|--------|---|---------|
-| Hardware manufacturing | $1,500,000 | 43% | 1,280 SFD kits for SLV |
-| Engineering expansion | $1,000,000 | 29% | 5 FTE: 3 embedded, 2 backend |
-| Field operations | $500,000 | 14% | 6 technicians, vehicles, tools |
-| Working capital | $300,000 | 9% | 6-month runway buffer |
-| G&A / legal | $200,000 | 5% | Compliance, patents, accounting |
-| **Total** | **$3,500,000** | **100%** | **18-month runway** |
-
-### 4.1.2 Milestones to Series A
-
-| Milestone | Target Date | Metric |
-|-----------|-------------|--------|
-| 1,280 fields deployed | Q4 2026 | 100% of Subdistrict 1 |
-| $6.5M ARR | Q4 2026 | Run-rate revenue |
-| 20% water savings proven | Q3 2026 | Published case study |
-| Break-even achieved | Q3 2027 | Positive EBITDA |
-| 3,500 fields committed | Q2 2027 | Adjacent subdistricts |
-
-## 4.2 Series A ($12M) — Q2 2027
-
-### 4.2.1 Use of Proceeds
-
-| Category | Amount | % | Details |
-|----------|--------|---|---------|
-| Multi-state expansion | $4,000,000 | 33% | NM, TX, KS pilots |
-| Product development | $3,000,000 | 25% | CSA, mobile app, APIs |
-| Sales & marketing | $2,500,000 | 21% | 8 new AEs, brand build |
-| Operations scale | $1,500,000 | 13% | 12 additional technicians |
-| Working capital | $1,000,000 | 8% | Inventory, receivables |
-| **Total** | **$12,000,000** | **100%** | **24-month runway** |
-
-### 4.2.2 Target Valuation
-
-| Metric | Assumption | Value |
-|--------|------------|-------|
-| ARR at raise | $17.8M | — |
-| ARR multiple | 2.5x | $44.5M |
-| Growth rate | 174% YoY | Premium |
-| Strategic value | Water rights IP | +$5M |
-| **Target Valuation** | | **$40M** |
-| Pre-money | | $28M |
-| Post-money | | $40M |
-| Dilution | | 30% |
-
-## 4.3 Runway Analysis
-
-| Scenario | Monthly Burn | Runway (months) | Trigger |
-|----------|--------------|-----------------|---------|
-| Conservative | $400K | 8.75 | Reduce hiring |
-| Base case | $433K | 8.1 | Seed round close |
-| Aggressive growth | $500K | 7.0 | Bridge round |
-
-**Current monthly burn (Q1 2026):** $433K
-**Cash on hand (post-seed):** $2.5M
-**Runway to profitability:** 18 months (Q3 2027)
-
----
-
-# PART V: SENSITIVITY ANALYSIS
-
-## 5.1 Key Variable Sensitivities
-
-### 5.1.1 Water Price Sensitivity
-
-| Groundwater Fee | Customer Savings | Adoption Rate | 2026 Revenue | Impact |
-|-----------------|------------------|---------------|--------------|--------|
-| $300/AF | $15,120 | 40% | $2.8M | -60% |
-| $500/AF (base) | $25,200 | 65% | $7.0M | — |
-| $700/AF | $35,280 | 85% | $9.1M | +30% |
-| $1,000/AF | $50,400 | 95% | $10.5M | +50% |
-
-**Insight:** Business model robust even at lower water prices; accelerates significantly if fees increase.
-
-### 5.1.2 Adoption Rate Sensitivity
-
-| Adoption Timeline | 2026 Fields | 2026 Revenue | 2027 Revenue | IRR |
-|-------------------|-------------|--------------|--------------|-----|
-| Delayed (50% slower) | 640 | $3.5M | $10M | 18% |
-| Base case | 1,280 | $7.0M | $19M | 35% |
-| Accelerated (50% faster) | 1,920 | $10.5M | $28M | 52% |
-
-### 5.1.3 Churn Rate Sensitivity
-
-| Annual Churn | Avg Lifetime | LTV | LTV:CAC | Valuation Impact |
-|--------------|--------------|-----|---------|------------------|
-| 5% (excellent) | 20 years | $79,440 | 147:1 | +40% |
-| 10% (base) | 10 years | $39,720 | 74:1 | — |
-| 15% (concerning) | 6.7 years | $26,480 | 49:1 | -25% |
-| 20% (critical) | 5 years | $19,860 | 37:1 | -40% |
-
-**Base case assumption: 10% annual churn** (industry benchmark for ag-tech)
-
-## 5.2 Scenario Planning
-
-### 5.2.1 Bear Case (20% probability)
-
-| Assumption | Change | Impact |
-|------------|--------|--------|
-| Water fees | $300/AF (reduced political will) | 40% lower savings |
-| Adoption | 50% slower (farmer resistance) | 18-month delay to break-even |
-| Competition | Aggressive pricing from Lindsay | Price war, 15% margin compression |
-| Outcome | 2029 break-even, $40M valuation at Series A |
-
-### 5.2.2 Base Case (60% probability)
-
-| Assumption | Outcome |
-|------------|---------|
-| Water fees | Stable at $500/AF |
-| Adoption | As projected, 65% subdistrict coverage |
-| Competition | Limited, differentiation holds |
-| Outcome | 2027 break-even, $40M Series A, $250M exit |
-
-### 5.2.3 Bull Case (20% probability)
-
-| Assumption | Change | Impact |
-|------------|--------|--------|
-| Water fees | $750/AF (compact litigation) | 50% higher savings |
-| Adoption | 100% subdistrict, 50% RGWCD | 3× field count |
-| Regulation | Mandatory precision ag | TAM expansion |
-| Outcome | 2026 break-even, $60M Series A, $500M+ IPO |
-
----
-
-# PART VI: KEY FINANCIAL METRICS
-
-## 6.1 SaaS Metrics Dashboard
-
-| Metric | 2026 | 2027 | 2028 | 2029 | 2030 |
+| Metric | 2031 | 2032 | 2033 | 2034 | 2035 |
 |--------|------|------|------|------|------|
-| **Growth** | | | | | |
-| YoY Revenue Growth | — | 171% | 127% | 87% | 66% |
-| Monthly Recurring Revenue | $542K | $1,483K | $3,380K | $6,337K | $10,560K |
-| ARR | $6.5M | $17.8M | $40.6M | $76.0M | $126.7M |
-| | | | | | |
-| **Unit Economics** | | | | | |
-| LTV | $28,266 | $29,679 | $31,163 | $32,721 | $34,357 |
-| CAC | $539 | $485 | $437 | $393 | $354 |
-| LTV:CAC | 52.4:1 | 61.2:1 | 71.3:1 | 83.3:1 | 97.1:1 |
-| CAC Payback (months) | 1.6 | 1.4 | 1.3 | 1.2 | 1.0 |
-| Gross Margin | 72% | 74% | 74% | 74% | 74% |
-| | | | | | |
-| **Retention** | | | | | |
-| Logo Churn | 10% | 9% | 8% | 7% | 6% |
-| Net Revenue Retention | 110% | 115% | 120% | 125% | 130% |
-| | | | | | |
-| **Efficiency** | | | | | |
-| Revenue per Employee | $200K | $380K | $626K | $918K | $1,232K |
-| OpEx as % of Revenue | 74% | 42% | 28% | 20% | 16% |
-| Rule of 40 | -44% | 50% | 103% | 141% | 166% |
-| | | | | | |
-| **Profitability** | | | | | |
-| EBITDA | ($155K) | $6,115K | $20,074K | $43,968K | $78,744K |
-| EBITDA Margin | -2% | 32% | 46% | 54% | 59% |
-| Free Cash Flow | ($800K) | $5,615K | $19,374K | $42,968K | $77,444K |
-| FCF Margin | -11% | 30% | 45% | 53% | 58% |
+| **Active Pivots** | 52,000 | 74,000 | 95,000 | 120,000 | 148,000 |
+| **Coverage %** | 7.0% | 10.0% | 12.8% | 16.2% | 20.0% |
+| **ARR** | $220M | $296M | $380M | $480M | $592M |
+| **Revenue/Pivot/Year** | $5,192 | $4,676 | $4,579 | $4,525 | $4,473 |
+| **Gross Margin** | 82.8% | 84.2% | 84.9% | 85.2% | 85.4% |
+| **EBITDA Margin** | 63.5% | 65.1% | 66.2% | 67.5% | 68.7% |
+| **Net Margin** | 49.3% | 50.6% | 51.5% | 52.5% | 53.5% |
+| **Headcount** | 350 | 480 | 620 | 780 | 950 |
+| **Revenue/Employee** | $771K | $721K | $701K | $696K | $697K |
+| **LTV:CAC Ratio** | 52:1 | 55:1 | 58:1 | 60:1 | 62:1 |
 
-## 6.2 Valuation Benchmarks
+## 3.3 Infrastructure Scaling Requirements
 
-| Company | ARR | Valuation | Multiple | Notes |
-|---------|-----|-----------|----------|-------|
-| CropX | $50M | $300M | 6.0x | Acquired by CropX |
-| Taranis | $30M | $200M | 6.7x | Last private round |
-| Prospera | $20M | $150M | 7.5x | Computer vision |
-| FarmSense (2027 target) | $17.8M | $40M | 2.2x | Conservative for seed-stage |
-| FarmSense (2029 target) | $76M | $250M | 3.3x | Series B / pre-exit |
+### 3.3.1 RSS (Regional Superstation) Network
 
-**Rationale for 2.2x multiple at Series A:**
-- Early stage discount vs. public comparables
-- Water rights IP premium justifies above 1.5x seed-stage norm
-- High growth (174%) supports premium to revenue
-- Proven unit economics (52:1 LTV:CAC) reduce risk
+| Region | RSS Count | Deployed By | Purpose |
+|--------|-----------|-------------|---------|
+| San Luis Valley | 1 | 2026 | Proof of concept |
+| Rio Grande Basin | 4 | 2027 | Regional coverage |
+| Colorado River Basin | 12 | 2028 | Multi-state network |
+| Ogalalla Aquifer | 20 | 2030 | Primary growth region |
+| Australia | 8 | 2033 | International launch |
+| India | 15 | 2033 | High-density deployment |
+| China | 12 | 2034 | Asia expansion |
+| Brazil/Argentina | 8 | 2035 | South America |
+| **Total RSS by 2035** | **80** | | |
+
+**RSS Capital Requirements:**
+- Cost per RSS: $175,000 (container, compute, solar, commissioning)
+- Total RSS CAPEX (2026-2035): $14,000,000
+- Annual RSS OpEx: $2,400,000 (maintenance, power, bandwidth)
+
+### 3.3.2 DHU (District Hub) Network
+
+| Year | DHU Count | Pivots/DHU | Coverage Radius |
+|------|-----------|------------|-----------------|
+| 2026 | 13 | 100 | 100-pivot districts |
+| 2027 | 98 | 100 | Rio Grande expansion |
+| 2028 | 348 | 100 | Colorado River |
+| 2030 | 860 | 100 | Ogalalla buildout |
+| 2032 | 1,480 | 100 | NA saturation |
+| 2035 | 2,800 | 100 | Global network |
+
+**DHU Economics:**
+- Cost per DHU: $8,500 (pole, solar, compute, radio)
+- Total DHU CAPEX (2026-2035): $23,800,000
+- Annual DHU OpEx: $4,200,000 (maintenance, cellular, power)
+
+### 3.3.3 Field Sensor Deployment (Cumulative)
+
+| Component | 2030 | 2032 | 2035 | Unit Cost | 2035 Total Value |
+|-----------|------|------|------|-----------|------------------|
+| VFA | 34,780 | 74,000 | 148,000 | $359 | $53.1M |
+| LRZB | 139,120 | 296,000 | 592,000 | $54 | $32.0M |
+| LRZN | 417,360 | 888,000 | 1,776,000 | $29 | $51.5M |
+| PFA | 34,780 | 74,000 | 148,000 | $1,680 | $248.6M |
+| PMT | 34,780 | 74,000 | 148,000 | $1,250 | $185.0M |
+| CSA | 6,956 | 14,800 | 29,600 | $890 | $26.3M |
+
+**Total deployed hardware value (2035): $596.5M**
+
+## 3.4 Capital Requirements & Funding Strategy
+
+### 3.4.1 Total Capital Needed (2026-2035)
+
+| Category | Amount | Purpose |
+|----------|--------|---------|
+| **Years 1-5** | | |
+| Seed Round | $3,500,000 | SLV deployment, product-market fit |
+| Series A | $12,000,000 | Rio Grande expansion, team growth |
+| Series B | $35,000,000 | Colorado River, Ogalalla entry |
+| **Years 6-10** | | |
+| Series C | $75,000,000 | International expansion, India/China |
+| Series D | $100,000,000 | Global saturation, profitability |
+| **Total Raised** | **$225,500,000** | |
+| | | |
+| **Use of Funds** | | |
+| Engineering (R&D) | $62,000,000 | 27% |
+| Sales & Marketing | $78,000,000 | 35% |
+| Operations & Field | $58,500,000 | 26% |
+| G&A | $14,500,000 | 6% |
+| CAPEX (RSS/DHU) | $12,500,000 | 6% |
+| **Total** | **$225,500,000** | **100%** |
+
+### 3.4.2 Cash Flow & Runway
+
+| Year | Starting Cash | Cash Burn | Revenue | Ending Cash |
+|------|---------------|-----------|---------|-------------|
+| 2026 | $3,500,000 | ($1,800,000) | $7,000,000 | $8,700,000 |
+| 2027 | $8,700,000 | ($1,885,000) | $19,000,000 | $25,815,000 |
+| 2028 | $25,815,000 | ($2,200,000) | $43,200,000 | $66,815,000 |
+| 2029 | $66,815,000 | ($1,800,000) | $80,800,000 | $145,815,000 |
+| 2030 | $145,815,000 | Series B +$35M | $134,400,000 | $315,215,000 |
+| 2031 | $315,215,000 | Profitable | $270,000,000 | $585,215,000 |
+| 2032 | $585,215,000 | Series C +$75M | $346,000,000 | $906,215,000 |
+| 2035 | $1.8B+ | Series D +$100M | $662,000,000 | $2.5B+ |
+
+**Cash flow positive: Q3 2029**
+**Self-sustaining: 2031**
+
+## 3.5 Unit Economics at Scale
+
+### 3.5.1 Cohort Analysis (Year 10 Scale)
+
+| Cohort Year | Pivots | Retention | Expansion Revenue | Net Revenue Retention |
+|-------------|--------|-----------|-------------------|----------------------|
+| 2026 | 1,280 | 98% | 25% | 123% |
+| 2027 | 7,220 | 97% | 30% | 126% |
+| 2028 | 17,500 | 96% | 35% | 130% |
+| 2029 | 31,000 | 95% | 40% | 133% |
+| 2030 | 52,000 | 94% | 45% | 137% |
+| 2031 | 74,000 | 93% | 50% | 140% |
+| **Blended NRR** | | **95%** | **38%** | **132%** |
+
+### 3.5.2 Customer Lifetime Value (LTV)
+
+| Metric | Year 5 | Year 10 | Notes |
+|--------|--------|---------|-------|
+| Average customer lifetime | 8 years | 10 years | Improved retention |
+| Gross margin | 74% | 85% | Scale efficiency |
+| Annual contract value | $5,988 | $4,473 | Volume discounts |
+| LTV (gross) | $35,428 | $38,020 | Includes expansion |
+| CAC | $1,250 | $610 | Word-of-mouth at scale |
+| **LTV:CAC Ratio** | **28:1** | **62:1** | **Best-in-class SaaS** |
+| Months to recover CAC | 2.5 | 1.6 | Rapid payback |
+
+### 3.5.3 Water Savings ROI (Customer Economics)
+
+| Metric | Year 1 | Year 5 | Year 10 |
+|--------|--------|--------|---------|
+| FarmSense cost/pivot/year | $5,988 | $5,388 | $4,473 |
+| Water saved (AF/pivot/year) | 50 | 55 | 60 |
+| Water price ($/AF) | $500 | $650 | $800 |
+| Water savings value | $25,000 | $35,750 | $48,000 |
+| Additional yield value | $8,000 | $12,000 | $15,000 |
+| **Total customer ROI** | **5.5:1** | **8.9:1** | **14.1:1** |
+| Payback period | 2.1 months | 1.4 months | 1.1 months |
+
+## 3.6 Sensitivity Analysis (Year 10)
+
+### 3.6.1 Scenario Matrix
+
+| Scenario | Pivots | Revenue | EBITDA | Probability |
+|----------|--------|---------|--------|-------------|
+| **Bull Case** | 185,000 (25%) | $828M | $582M | 20% |
+| Water price $1,000/AF, rapid China adoption | | | | |
+| **Base Case** | 148,000 (20%) | $662M | $455M | 60% |
+| As modeled above | | | | |
+| **Bear Case** | 111,000 (15%) | $497M | $298M | 20% |
+| Slower international, price pressure | | | | |
+
+### 3.6.2 Key Variable Impact on EBITDA
+
+| Variable | -20% | Base | +20% | Sensitivity |
+|----------|------|------|------|-------------|
+| Water price | $298M | $455M | $612M | High |
+| Adoption rate | $380M | $455M | $530M | Medium |
+| Churn rate | $520M | $455M | $390M | Medium |
+| CAC | $467M | $455M | $443M | Low |
+
+## 3.7 Exit Analysis & Valuation
+
+### 3.7.1 Comparable Companies (2035 Projections)
+
+| Company | Revenue | Multiple | EV | Notes |
+|---------|---------|----------|-----|-------|
+| Trimble Agriculture | $2.1B | 4.5x | $9.5B | Precision ag hardware |
+| Raven Industries | $400M | 6.2x | $2.5B | VRI systems |
+| Lindsay Corp (Zimmatic) | $800M | 3.8x | $3.0B | Pivot manufacturing |
+| CropX | $120M | 8.5x | $1.0B | Ag analytics SaaS |
+| **FarmSense (Base)** | **$662M** | **6.0x** | **$4.0B** | **Full-stack DFOS** |
+| FarmSense (Bull) | $828M | 7.5x | $6.2B | 25% coverage |
+
+### 3.7.2 Exit Scenarios
+
+| Exit Type | Year | Revenue | Multiple | Valuation | Investor Return |
+|-----------|------|---------|----------|-----------|-----------------|
+| **Strategic Sale (AgTech)** | 2032 | $346M | 6.0x | $2.1B | 9.3x |
+| Deere, Trimble, CNH acquisition | | | | | |
+| **Strategic Sale (Tech)** | 2033 | $435M | 7.0x | $3.0B | 13.3x |
+| Google, Microsoft, Amazon (AgCloud) | | | | | |
+| **IPO** | 2034 | $543M | 7.5x | $4.1B | 18.2x |
+| NYSE/NASDAQ listing | | | | | |
+| **Sustainable Private** | — | $662M+ | N/A | N/A | Dividends |
+| Cash flow machine, no exit | | | | | |
+
+### 3.7.3 Investor Returns (Series A Example)
+
+| Round | Investment | Valuation | Ownership | Exit Value | Return |
+|-------|------------|-----------|-----------|------------|--------|
+| Seed | $3.5M | $10M | 35.0% | $1.4B | 400x |
+| Series A | $12M | $40M | 30.0% | $1.2B | 100x |
+| Series B | $35M | $150M | 23.3% | $933M | 26.7x |
+| Series C | $75M | $400M | 18.8% | $750M | 10.0x |
+| Series D | $100M | $1.2B | 8.3% | $333M | 3.3x |
+| **Total** | **$225.5M** | | **100%** | **$4.0B** | **17.7x blended** |
 
 ---
 
-# PART VII: RISK FACTORS & MITIGATIONS
+# PART IV: GOVERNANCE & CONTROLS
 
-## 7.1 Financial Risk Register
+## 4.1 Financial Controls
 
-| Risk | Probability | Impact | Mitigation | Residual Risk |
-|------|-------------|--------|------------|---------------|
-| Funding shortfall | Medium | Critical | Non-dilutive grants ($5.4M pipeline) | Low |
-| Customer concentration | Low | High | Subdistrict model diversifies across 1,280 fields | Low |
-| Hardware margin compression | Medium | Medium | Sensor-agnostic design allows supplier switching | Low |
-| Churn spike | Low | High | 7-year LTV, annual contracts, legal necessity | Low |
-| Currency/commodity | Low | Low | BOM in USD, hedged for international | Low |
-| Interest rate rise | Medium | Low | Equity-funded, minimal debt | Low |
+### 4.1.1 Budget Authority Matrix
 
-## 7.2 Contingency Planning
+| Spend Level | Authority Required | Documentation |
+|-------------|-------------------|---------------|
+| <$10,000 | Department head | PO + business case |
+| $10K-$100K | VP Finance | Board notification |
+| $100K-$500K | CEO approval | Board approval |
+| >$500K | Board vote | Written resolution |
 
-| Trigger | Action | Impact |
-|---------|--------|--------|
-| < 6 months runway | Activate bridge round conversations | Dilution risk |
-| < 50% of Q2 field target | Pivot to NRCS grant-heavy acquisition | Lower CAC, slower growth |
-| > 15% churn | Deploy customer success team | Reduced LTV |
-| Competitor price war | Emphasize legal compliance moat | Maintain pricing |
-| Supply chain disruption | Activate secondary suppliers | 4-week delay |
+### 4.1.2 Reporting Cadence
 
----
+| Report | Frequency | Audience | Contents |
+|--------|-----------|----------|----------|
+| Cash position | Daily | CEO, CFO | Bank balances, runway |
+| Bookings/ARR | Weekly | Leadership | New, expansion, churn |
+| P&L | Monthly | Board | Revenue, costs, EBITDA |
+| Unit economics | Quarterly | Board | LTV, CAC, NRR |
+| Financial plan | Annually | Board + Investors | Updated model |
 
-# APPENDIX A: DETAILED ASSUMPTIONS LOG
+### 4.1.3 Audit Requirements
 
-## A.1 Revenue Assumptions
-
-| Assumption | Value | Source | Confidence |
-|------------|-------|--------|------------|
-| SLV Subdistrict 1 fields | 1,280 | RGWCD official data | High |
-| Enterprise tier penetration | 65% | Pilot customer interviews | Medium |
-| Volume discount uptake | 30% | Subdistrict model | High |
-| Hardware attach rate | 90% | Required for operation | High |
-| Services attach rate | 40% | Annual calibration | Medium |
-
-## A.2 Cost Assumptions
-
-| Assumption | Value | Source | Confidence |
-|------------|-------|--------|------------|
-| SFD-20 BOM | $2,800 | Supplier quotes (Feb 2026) | High |
-| Engineering salary | $125K | Colorado market rate | High |
-| AWS cost per field | $38/month | Architecture modeling | Medium |
-| LTE-M data per field | $12/month | Twilio pricing | High |
-
-## A.3 Market Assumptions
-
-| Assumption | Value | Source | Confidence |
-|------------|-------|--------|------------|
-| SLV water fee | $500/AF | RGWCD 2025 ruling | High |
-| SLV acre per pivot | 126 | USDA census | High |
-| Water use per acre | 2 AF/season | Colorado State University | High |
-| Achievable water savings | 20% | SPAC model + pilot projection | Medium |
+| Type | Frequency | Provider | Scope |
+|------|-----------|----------|-------|
+| Financial audit | Annual | Big 4 (PwC, Deloitte) | GAAP compliance |
+| SOC 2 Type II | Annual | Third-party | Security controls |
+| Water Court audit | Annual | State engineers | Ledger integrity |
+| Penetration test | Semi-annual | Third-party | Security posture |
 
 ---
 
-# APPENDIX B: HISTORICAL FINANCIALS (IF AVAILABLE)
-
-## B.1 Pre-Seed Period (2025)
-
-| Period | Revenue | Expenses | Net Income | Cash |
-|--------|---------|----------|------------|------|
-| 2025 | $0 | $180,000 | ($180,000) | $320,000 |
-
-**Pre-seed funding:** $500K (friends & family, founder)
-
----
-
-*Document Version: 2.0*
-*Last Comprehensive Review: 2026-03-19*
-*Next Scheduled Review: 2026-04-19 (monthly for financials)*
-*Owner: CFO / Finance Team*
-*DAP Compliance: VERIFIED*
-
-**Proprietary & Confidential — bxthre3 inc.**
-**For investor distribution only**
+*Document Version: 2.1*
+*Last Updated: 2026-03-19*
+*Next Review: 2026-06-30*
+*Classification: Confidential — Investor Materials Only*

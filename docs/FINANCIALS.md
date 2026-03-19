@@ -806,12 +806,12 @@ This section details the **total company investment required** to deploy and ope
 | **PFA Total** | **$2,150K** | **$9,623K** | **$16,037K** | **$20,250K** | **$30,240K** | **$30,360K** | **$27,720K** | **$31,500K** | **$33,600K** | **$191,480K** |
 | | | | | | | | | | | |
 | **VFA** | 2,560 | 11,880 | 20,560 | 27,000 | 42,000 | 44,000 | 42,000 | 50,000 | 56,000 | **256,000** |
-| Unit BOM | $359 | $345 | $331 | $317 | $303 | $289 | $275 | $261 | $247 | |
-| **VFA Total** | **$919K** | **$1,996K** | **$3,331K** | **$4,212K** | **$6,300K** | **$6,336K** | **$5,796K** | **$6,600K** | **$7,056K** | **$19,340K** |
+| Unit BOM | $359 | $345 | $331 | $317 | $298 | $284 | $270 | $256 | $242 | |
+| **VFA Total** | **$445K** | **$202K** | **$670K** | **$1,264K** | **$2,503K** | **$3,124K** | **$3,402K** | **$3,840K** | **$4,337K** | **$19,340K** |
 | | | | | | | | | | | |
 | **LRZB** | 5,120 | 23,760 | 41,120 | 54,000 | 84,000 | 88,000 | 84,000 | 100,000 | 112,000 | **512,000** |
 | Unit BOM | $54 | $52 | $50 | $48 | $46 | $44 | $42 | $40 | $38 | |
-| **LRZB Total** | **$277K** | **$1,236K** | **$2,056K** | **$2,592K** | **$3,864K** | **$3,872K** | **$3,528K** | **$4,000K** | **$4,256K** | **$16,510K** |
+| **LRZB Total** | **$277K** | **$1,236K** | **$2,056K** | **$2,264K** | **$3,864K** | **$3,872K** | **$3,528K** | **$4,000K** | **$4,256K** | **$16,510K** |
 | | | | | | | | | | | |
 | **LRZN** | 15,360 | 71,280 | 123,360 | 162,000 | 252,000 | 264,000 | 252,000 | 300,000 | 336,000 | **1,536,000** |
 | Unit BOM | $29 | $28 | $27 | $26 | $25 | $24 | $23 | $22 | $21 | |
@@ -896,7 +896,7 @@ This section details the **total company investment required** to deploy and ope
 | Battery pack rebuilding | $1,200,000 | $12,000,000 |
 | Sensor calibration & testing | $800,000 | $8,000,000 |
 | RMA processing & warranty | $600,000 | $6,000,000 |
-| **Total Refurbishment** | **$6,600,000/yr** | **$66,000,000** |
+| **Total Refurbishment** | | | **$66,000,000** |
 
 ## 6.4 Infrastructure Buildout Costs
 
@@ -954,7 +954,7 @@ This section details the **total company investment required** to deploy and ope
 | Networking (CDN, load balancers) | $2,000,000 | $10,000,000 |
 | **Years 6-10 Subtotal** | **$27,500,000/yr** | **$137,500,000** |
 | | | |
-| **TOTAL CLOUD (10 years)** | | **$172,000,000** |
+| **TOTAL CLOUD (10 years)** | | | **$172,000,000** |
 
 ### 6.4.4 Cellular & Connectivity
 
@@ -1111,7 +1111,7 @@ This section details the **total company investment required** to deploy and ope
 | **Customer Acquisition (CAC)** | $87,400,000 | 6.4% | $591 |
 | **Working Capital** | $19,000,000 | 1.4% | $128 |
 | | | | |
-| **TOTAL 10-YEAR ENTERPRISE TCO** | **$1,362,075,000** | **100%** | **$9,203** |
+| **TOTAL ENTERPRISE TCO** | **$1.362 billion** | **100%** | **$9,203** |
 
 ### 6.8.2 Annual Cash Flow Summary
 
@@ -1122,7 +1122,7 @@ This section details the **total company investment required** to deploy and ope
 | 2028 | $55,215K | $12,000K | $67,215K | $43,200K | ($24,015K) |
 | 2029 | $70,721K | $16,000K | $86,721K | $80,800K | ($5,921K) |
 | 2030 | $103,422K | $21,000K | $124,422K | $134,400K | $9,978K |
-| 2031 | $91,839K | $26,000K | $117,839K | $270,000K | $152,161K |
+| 2031 | $91,839K | $26,000K | $117,839K | $270,000K | $298,295K |
 | 2032 | $89,992K | $31,000K | $120,992K | $346,000K | $225,008K |
 | 2033 | $100,705K | $36,000K | $136,705K | $435,000K | $298,295K |
 | 2034 | $107,626K | $41,000K | $148,626K | $543,000K | $394,374K |
@@ -1156,7 +1156,7 @@ This section details the **total company investment required** to deploy and ope
 | **Cumulative Cash Flow Positive** | Year 5 (2030) |
 | **Return on Invested Capital** | 81.8% |
 
-### 6.8.5 Cost Per Pivot by Deployment Phase
+## 6.8.5 Cost Per Pivot by Deployment Phase
 
 | Phase | Years | Pivots | TCO | Cost/Pivot |
 |-------|-------|--------|-----|------------|

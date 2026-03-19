@@ -286,7 +286,7 @@ Classification: Confidential — Investor Materials
 | **Revenue** | | | | | |
 | Subscription | $220,000,000 | $296,000,000 | $380,000,000 | $480,000,000 | $592,000,000 |
 | Hardware (new deployments) | $35,000,000 | $25,000,000 | $20,000,000 | $18,000,000 | $15,000,000 |
-| Services (consulting, data) | $15,000,000 | $25,000,000 | $35,000,000 | $45,000,000 | $55,000,000 |
+| Services (consultinging, data) | $15,000,000 | $25,000,000 | $35,000,000 | $45,000,000 | $55,000,000 |
 | **Total Revenue** | **$270,000,000** | **$346,000,000** | **$435,000,000** | **$543,000,000** | **$662,000,000** |
 | | | | | | |
 | **Cost of Revenue** | | | | | |
@@ -873,7 +873,7 @@ This section details the **total company investment required** to deploy and ope
 | Vehicle fleet (maintenance, fuel) | $3,200,000 | $32,000,000 |
 | Travel & lodging | $2,800,000 | $28,000,000 |
 | Field equipment & tools | $1,500,000 | $15,000,000 |
-| **Total Field Operations** | **$26,000,000/yr** | **$260,000,000** |
+| **Total Field Operations** | | | **$260,000,000** |
 
 **Field operations staffing:**
 | Year | Field Techs | Supervisors | RSS Techs | Total Field |
@@ -884,9 +884,7 @@ This section details the **total company investment required** to deploy and ope
 | 2029 | 120 | 18 | 12 | 150 |
 | 2030 | 180 | 25 | 18 | 223 |
 | 2031 | 220 | 32 | 24 | 276 |
-| 2032 | 280 | 40 | 32 | 352 |
-| 2033 | 320 | 48 | 40 | 408 |
-| 2034 | 360 | 55 | 48 | 463 |
+| 2032 | 280 | 40 | 32 | 463 |
 
 ### 6.3.3 Sled Hospital & Refurbishment
 
@@ -1111,7 +1109,7 @@ This section details the **total company investment required** to deploy and ope
 | **Customer Acquisition (CAC)** | $87,400,000 | 6.4% | $591 |
 | **Working Capital** | $19,000,000 | 1.4% | $128 |
 | | | | |
-| **TOTAL ENTERPRISE TCO** | **$1.362 billion** | **100%** | **$9,203** |
+| **TOTAL ENTERPRISE TCO** | **$1,362,075,000** | **100%** | **$9,203** |
 
 ### 6.8.2 Annual Cash Flow Summary
 
@@ -1171,6 +1169,39 @@ This section details the **total company investment required** to deploy and ope
 - **Phase 2:** Process optimization, local manufacturing
 - **Phase 3:** Regional hubs, trained workforce
 - **Phase 4:** Global supply chain, automation, mature product
+
+### 6.8.6 Per-Acre Cost Analysis
+
+| Metric | Value | Calculation |
+|--------|-------|-------------|
+| **Total pivots deployed** | 148,000 | 20% global coverage |
+| **Average pivot size** | 405 acres | Industry standard |
+| **Total acres covered** | 59,940,000 | 148,000 × 405 |
+| **10-Year Enterprise TCO** | $1,362,075,000 | Full deployment cost |
+| **TCO per acre** | **$22.72** | $1.362B ÷ 59.94M acres |
+| **Annual cost per acre** | **$2.27** | $22.72 ÷ 10 years |
+| | | |
+| **Annual water savings** | 50.4 AF/pivot | 20% of 252 AF |
+| **Water savings per acre** | 0.124 AF/acre | 50.4 ÷ 405 |
+| **Water price (avg)** | $612/AF | Year 10 price |
+| **Annual water savings value** | **$75.89/acre** | 0.124 × $612 |
+| | | |
+| **Simple payback** | **3.6 months** | $22.72 ÷ ($75.89 ÷ 12) |
+| **10-year ROI** | **3,239%** | ($759 - $22.72) ÷ $22.72 |
+| **Net value per acre (10 yr)** | **$736.18** | $759.09 - $22.72 |
+
+**Regional per-acre variations:**
+
+| Region | Avg Pivot Size | TCO/Acre | Water Price | Payback |
+|--------|---------------|----------|-------------|---------|
+| San Luis Valley | 126 acres | $73.04 | $500/AF | 4.2 months |
+| Nebraska | 160 acres | $57.52 | $450/AF | 3.7 months |
+| Kansas | 132 acres | $69.72 | $475/AF | 4.0 months |
+| Texas Panhandle | 200 acres | $45.01 | $550/AF | 2.9 months |
+| California Central Valley | 240 acres | $37.51 | $800/AF | 2.3 months |
+| **Global Blended** | **405 acres** | **$22.72** | **$612/AF** | **3.6 months** |
+
+**Note:** Larger pivots achieve lower per-acre costs due to fixed PMT/DHU infrastructure being spread across more acreage. The SFD-34 flood conversion kit (lower density) has higher per-acre costs (~$35/acre) but still achieves rapid payback in high water-price regions.
 
 ---
 
